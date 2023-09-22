@@ -1,0 +1,98 @@
+.service-main-box{
+    margin-top: 95px;
+    overflow: hidden;
+}
+.serivesBgImg{
+    background-image: url('..//..//assets/pic.jpg');
+    /* background-image: url('..//..//assets/elements.jpg'); */
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    height:200px;
+}
+.service-img-overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(1, 1, 1, 0.8);
+
+}
+.estimation-costing-box{    
+    /* border-left: 3px solid #0b0757; */
+    border-radius: 5px; 
+    position: relative;
+}
+.estimation-costing-sub-title{
+    font-size: 20px;
+    color: #0b0757;
+    font-weight: 600;
+}
+    .comprehensive-service-text{
+        font-size: 45px;
+        position: relative;
+        color: #0b0757;
+    }
+    .comprehensive-service-text::before{
+        content: '';
+        margin-top: 10px;
+        width: 300px;
+        height: 5px;
+        position: absolute;
+        bottom: -20px;
+        color: transparent;
+        background: transparent linear-gradient(99deg, #5338FF 0%,#FFC465 100%) 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+    }
+.comprehensive-service-box{
+    margin-top: 100px;
+}
+.manufacturing-container{
+    justify-content: space-between !important;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.8s;
+    cursor: pointer;
+  }
+  
+  .image-container:hover .image {
+    transform: scale(1.05);
+    
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+@media (max-width:450px) {
+    .comprehensive-service-text{
+        display: none;
+        
+    }
+    .comprehensive-service-box{
+        margin-top: 50px;
+    }
+    .service-main-box{
+        margin-top: 70px;
+        overflow: hidden;
+    }
+    .manufacturing-container{
+        justify-content: center !important;
+    }
+    .overlay {
+        opacity: 1;
+      }
+}
