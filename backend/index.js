@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: 'https://amruthbuildproducts.netlify.app/', // Replace with your Netlify site's URL
+    origin: 'https://amruthbuildproducts.netlify.app', // Replace with your Netlify site's URL
   })
 );
 
@@ -40,8 +40,8 @@ app.post('/contact', (req, res) => {
       console.error('Error sending email:', error);
       res.status(500).json({ error: 'Email could not be sent' });
     } else {
-      // console.log('Email sent:', info.response);
-      // res.json({ message: 'Email sent successfully' });
+      console.log('Email sent:', info.response);
+      res.json({ message: 'Email sent successfully' });
     }
   });
 });
