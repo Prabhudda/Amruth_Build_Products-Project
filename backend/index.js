@@ -16,8 +16,13 @@ const transporter = nodemailer.createTransport({
 
 app.use(express.json());
 app.use(cors());
+app.use(
+  cors({
+    origin: 'https://amruthbuildproducts.netlify.app/', // Replace with your Netlify site's URL
+  })
+);
 
-app.post('contact', (req, res) => {
+app.post('/contact', (req, res) => {
   const { name, email, number, message } = req.body;
   console.log(email);
 
