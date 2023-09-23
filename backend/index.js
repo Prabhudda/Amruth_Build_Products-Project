@@ -17,32 +17,29 @@ const transporter = nodemailer.createTransport({
 app.use(express.json());
 app.use(cors());
 
-app.post(
-  'https://amruth-build-products-backend.onrender.com/contact',
-  (req, res) => {
-    const { name, email, number, message } = req.body;
-    console.log(email);
+app.post('contact', (req, res) => {
+  const { name, email, number, message } = req.body;
+  console.log(email);
 
-    const mailOptions = {
-      from: process.env.ADMIN_EMAIL, // Use the email provided in the form
-      to: process.env.ADMIN_EMAIL, // Replace with your email
-      subject: 'Amruth Build Products Form Submission Mail',
-      html: `<span>
+  const mailOptions = {
+    from: process.env.ADMIN_EMAIL, // Use the email provided in the form
+    to: process.env.ADMIN_EMAIL, // Replace with your email
+    subject: 'Amruth Build Products Form Submission Mail',
+    html: `<span>
     <span><b>Name: </b></span> ${name}<br><span><b>Email: </b></span> ${email}<br><span><b>Contact: </b></span> ${number}<br><span><b>Message: </b></span> ${message}
 </span>`,
-    };
+  };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error('Error sending email:', error);
-        res.status(500).json({ error: 'Email could not be sent' });
-      } else {
-        // console.log('Email sent:', info.response);
-        // res.json({ message: 'Email sent successfully' });
-      }
-    });
-  }
-);
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ error: 'Email could not be sent' });
+    } else {
+      // console.log('Email sent:', info.response);
+      // res.json({ message: 'Email sent successfully' });
+    }
+  });
+});
 
 app.get('/attributes', (req, res) => {
   res.send(
