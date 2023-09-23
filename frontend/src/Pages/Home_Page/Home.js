@@ -79,8 +79,8 @@ function Home() {
         <div className='img-overlay text-center'>
           <div className='text-container container' key={id}>
             <h1 className='company-home-title'>{title}</h1>
-            <h2 className='home-sub-title mt-3'>{txt}</h2>
-            <h5 className='mt-3 home-sub-text'>{tt}</h5>
+            <h2 className='home-sub-title mt-3 d-md-block d-none'>{txt}</h2>
+            <h5 className='mt-3 home-sub-text d-lg-block d-none'>{tt}</h5>
           </div>
           <div className='mt-5 container'>
             <Link className='explore-link btn btn-outline-primary' to='/about'>

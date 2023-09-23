@@ -81,7 +81,7 @@ function Navbar() {
                 {isopen && (
                   <img
                     src={LogoRound}
-                    className='LogoRound d-sm-none '
+                    className='LogoRound d-lg-none '
                     alt='logo'
                     loading='lazy'
                   />

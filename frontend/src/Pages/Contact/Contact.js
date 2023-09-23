@@ -108,7 +108,7 @@ function Contact() {
         }, 1500);
 
         const response = await axios.post(
-          'http://localhost:8000/contact',
+          'https://amruth-build-products-backend.onrender.com//contact',
           formData
         );
 
