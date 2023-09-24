@@ -30,9 +30,44 @@ app.post('/contact', (req, res) => {
     from: process.env.ADMIN_EMAIL, // Use the email provided in the form
     to: process.env.ADMIN_EMAIL, // Replace with your email
     subject: 'Amruth Build Products Form Submission Mail',
-    html: `<span>
-    <span><b>Name: </b></span> ${name}<br><span><b>Email: </b></span> ${email}<br><span><b>Contact: </b></span> ${number}<br><span><b>Message: </b></span> ${message}
-</span>`,
+    html: ` <html>
+    <head>
+      <style>
+        /* Define inline styles here */
+        .email-container {
+          font-family: Arial, sans-serif;
+          border: 1px solid #ccc;
+          padding: 20px;
+          margin: 20px;
+        }
+        .label {
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="email-container">
+        <table>
+          <tr>
+            <td class="label" width="100">Name:</td>
+            <td width="300">${name}</td>
+          </tr>
+          <tr>
+            <td class="label" width="100">Email:</td>
+            <td width="300">${email}</td>
+          </tr>
+          <tr>
+            <td class="label" width="100">Contact:</td>
+            <td width="300">${number}</td>
+          </tr>
+          <tr>
+            <td class="label" width="100">Message:</td>
+            <td width="300">${message}</td>
+          </tr>
+        </table>
+      </div>
+    </body>
+  </html>`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
