@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import '../Home_Page/Home.css';
 import { FaLeaf, FaTrophy, FaLightbulb } from 'react-icons/fa';
 import { RxArrowTopRight } from 'react-icons/rx';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import img1 from '..//..//assets/Service-home-1.jpeg';
 import img2 from '..//..//assets/3.jpeg';
 import img3 from '..//..//assets/turnkey.jpg';
@@ -226,7 +227,10 @@ function Home() {
                 functionality with aesthetics for beautifully crafted spaces
                 that resonate with your aspirations.
               </p>
-              <Link to='/services' className='btn btn-outline-primary'>
+              <Link
+                to='/services#planning-designing'
+                className='btn btn-outline-primary'
+              >
                 Get More <RxArrowTopRight />
               </Link>
             </div>
@@ -246,7 +250,10 @@ function Home() {
                 With detailed cost breakdowns and advanced tools, you can
                 confidently manage your project budget without hidden surprises.
               </p>
-              <Link to='/services' className='btn btn-outline-primary'>
+              <Link
+                to='/services#estimation-costing'
+                className='btn btn-outline-primary'
+              >
                 Get More <RxArrowTopRight />
               </Link>
             </div>
@@ -283,7 +290,10 @@ function Home() {
                 construction, and more, ensuring a seamless experience and
                 exceptional results.
               </p>
-              <Link to='/services' className='btn btn-outline-primary'>
+              <Link
+                to='/services#turnkey-projects'
+                className='btn btn-outline-primary'
+              >
                 Get More <RxArrowTopRight />
               </Link>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import SolidBlocks from '..//..//assets/SB.jpg';
 import PaverBlock from '..//..//assets/paver-block.jpeg';
 import KerbStone from '..//..//assets/kerb-stone.jpeg';

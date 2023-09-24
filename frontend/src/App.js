@@ -6,7 +6,7 @@ import About from './Pages/About/About';
 import Products from './Pages/Product/Products';
 import Services from './Pages/Service_Page/Services';
 import Contact from './Pages/Contact/Contact';
-import Team from './Pages/Team/Team';
+// import Team from './Pages/Team/Team';
 import ScrollToTop from '../src/Components/ScrollToTop';
 import Footer from '../src/Components/Footer/Footer';
 import Whatsapp from './Components/Whatsapp/Whatsapp';
@@ -29,9 +29,9 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/products' element={<Products />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/team' element={<Team />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
+          {/*<Route path='/team' element={<Team />} /> */}
         </Routes>
         <Footer />
       </Router>

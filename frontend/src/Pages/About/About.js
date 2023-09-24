@@ -46,7 +46,7 @@ function About() {
               loading='lazy'
               className='img-fluid company-img-box'
               src={company1}
-              alt=''
+              alt='company-img'
             />
           </div>
           <div className='col-lg-6 col-12 mt-lg-0 mt-4'>
@@ -54,7 +54,7 @@ function About() {
               loading='lazy'
               className='img-fluid company-img-box'
               src={company2}
-              alt=''
+              alt='company-img'
             />
           </div>
         </div>

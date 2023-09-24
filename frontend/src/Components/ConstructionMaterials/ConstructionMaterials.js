@@ -1,6 +1,8 @@
 import React from 'react';
 import '../ConstructionMaterials/ConstructionMaterials.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Cement from '../..//assets/Cement.jpg';
 import TMT from '../..//assets/steel.jpg';
 import P_Sand from '../..//assets/psand.png';
@@ -91,7 +93,10 @@ function ConstructionMaterials() {
         </p>
       </div>
       <div className='text-center'>
-        <Link to='/products' className=' btn btn-outline-primary px-5'>
+        <Link
+          to='/products#construction-materials'
+          className=' btn btn-outline-primary px-5'
+        >
           Explore <FaAngleDoubleRight />
         </Link>
       </div>

@@ -142,6 +142,7 @@ function Navbar() {
                     Projects
                   </Link>
                 </NavLi>
+                {/* 
                 <NavLi
                   className='li li-link d-block d-sm-inline-block'
                   onClick={() => setisopen(!isopen)}
@@ -155,6 +156,7 @@ function Navbar() {
                     Team
                   </Link>
                 </NavLi>
+                */}
                 <NavLi
                   className='li li-link d-block d-sm-inline-block'
                   onClick={() => setisopen(!isopen)}

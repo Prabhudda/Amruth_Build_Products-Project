@@ -298,7 +298,9 @@ function Products() {
           </div>
         </div>
       </div>
+      <div className='p-0' id='construction-materials'></div>
       <div className='position-relative container-fluid px-0'>
+        <div className='p-0' id='construction-materials2'></div>
         <div className='position-relative serivesBgImg '>
           <div className='service-img-overlay d-flex justify-content-center align-items-center'>
             <h1 className='text-light text-center products-main-title'>

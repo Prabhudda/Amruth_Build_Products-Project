@@ -20,7 +20,9 @@ import M_Sand from '../..//assets/m-sand.jpg';
 import Jally from '../..//assets/jally.jpg';
 import Dust from '../..//assets/dust.jpg';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 function Services() {
   return (
     <div className='service-main-box container-fluid p-0  bg-light'>
@@ -69,6 +71,7 @@ function Services() {
               className='col-md-5 col-12 py-5 mt-md-0 mt-3 bg-dark text-light'
               data-aos='fade-up'
               data-aos-duration='1800'
+              id='planning-designing'
             >
               <h4>Construction Materials</h4>
             </div>
@@ -188,9 +191,9 @@ function Services() {
             </div>
           </div>
         </div>
-
+        <div id='estimation-costing' className='p-5'></div>
         <div className='mt-sm-5 mt-2'>
-          <div className=' bg-light p-2'>
+          <div className='bg-light p-2'>
             <div
               className='row d-flex justify-content-around align-items-center p-sm-5 p-2'
               style={{ backgroundColor: 'white' }}
@@ -309,6 +312,7 @@ function Services() {
             </div>
           </div>
         </div>
+        <div id='turnkey-projects' className='p-5'></div>
         <div className='mt-sm-5 mt-2'>
           <div className=' bg-light p-2'>
             <div
@@ -513,7 +517,10 @@ function Services() {
                     Solid Blocks & Paver Blocks for robust structures, Kerb
                     Stones & Precast Compound Walls for safety and aesthetics.
                   </p>
-                  <Link to='/products' className='btn btn-outline-primary'>
+                  <Link
+                    to='/products#construction-materials2'
+                    className='btn btn-outline-primary'
+                  >
                     Read More
                   </Link>
                 </div>

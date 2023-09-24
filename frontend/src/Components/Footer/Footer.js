@@ -10,7 +10,9 @@ import {
 } from 'react-icons/fa';
 import { AiOutlineArrowUp } from 'react-icons/ai';
 // import { AiOutlineArrowUp } from 'react-icons/ai';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Logo from '../../assets/round.jpg';
 import '../Footer/Footer.css';
 // import ScrollToTop from '../ScrollToTop';
@@ -27,7 +29,7 @@ function Footer() {
               <div className=''>
                 <img
                   src={Logo}
-                  alt=''
+                  alt='image'
                   width={100}
                   height={100}
                   loading='lazy'
@@ -136,6 +138,7 @@ function Footer() {
                   Services
                 </Link>
               </div>
+              {/* 
               <div>
                 <Link
                   className={
@@ -146,6 +149,7 @@ function Footer() {
                   Team
                 </Link>
               </div>
+              */}
               <div className=''>
                 <Link
                   className={

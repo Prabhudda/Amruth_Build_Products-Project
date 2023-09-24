@@ -19,6 +19,7 @@ body {
   background-color: white !important;
   overflow-x:hidden !important;
   letter-spacing: 1px;
+  scroll-behavior: smooth;
 }
 ::selection{
   background-color: #014AA8;
