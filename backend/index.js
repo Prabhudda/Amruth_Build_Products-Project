@@ -49,7 +49,7 @@ app.post('/contact', (req, res) => {
           </tr>
           <tr>
             <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Message:</td>
-            <td style="border: 1px solid #ccc; padding: 5px;">${message}</td>
+            <td style="border: 1px solid #ccc; padding: 5px; word-break: break-all; ">${message}</td>
           </tr>
         </table>
       </div>
