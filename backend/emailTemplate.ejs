@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; margin: 20px;">
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+          <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Name:</td>
+          <td style="border: 1px solid #ccc; padding: 5px;"><%= name %></td>
+        </tr>
+        <% if (email) { %>
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Email:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;"><%= email %></td>
+          </tr>
+        <% } %>
+        <tr>
+          <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Contact:</td>
+          <td style="border: 1px solid #ccc; padding: 5px;"><%= number %></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Message:</td>
+          <td style="border: 1px solid #ccc; padding: 5px; word-break: break-all;"><%= message %></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

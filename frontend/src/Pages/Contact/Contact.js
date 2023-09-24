@@ -81,17 +81,17 @@ function Contact() {
       newErrors.name = 'Please enter your name';
     }
 
-    if (!isValidEmail(formData.email)) {
-      newErrors.email = 'please provide your email';
-    }
+    // if (!isValidEmail(formData.email)) {
+    //   newErrors.email = 'please provide your email';
+    // }
 
     if (!isValidNumber(formData.number)) {
       newErrors.number = 'please enter valid number';
     }
 
-    if (!isValidMessage(formData.message)) {
-      newErrors.message = 'Message must be between 10 and 1000 characters';
-    }
+    // if (!isValidMessage(formData.message)) {
+    //   newErrors.message = 'Message must be between 10 and 1000 characters';
+    // }
 
     if (Object.keys(newErrors).length > 0) {
       // Display error messages to the user
@@ -190,7 +190,7 @@ function Contact() {
             </div>
             <div>
               <label className='mt-2 fw-bold' htmlFor='email'>
-                Email <span style={{ color: 'red' }}>*</span>
+                Email
               </label>
               <InputBox
                 className='input-box w-100 mt-2 card px-3 py-2'
@@ -200,7 +200,8 @@ function Contact() {
                 placeholder='Enter your email'
                 onChange={handleChange}
               />
-              {errors.email && <span className='error'>{errors.email}</span>}
+              {/* 
+              {errors.email && <span className='error'>{errors.email}</span>}*/}
             </div>
             <div>
               <label className='mt-2 fw-bold' htmlFor='number'>
@@ -218,7 +219,7 @@ function Contact() {
             </div>
             <div>
               <label className=' mt-2 fw-bold' htmlFor='message'>
-                Message <span style={{ color: 'red' }}>*</span>
+                Message
               </label>
               <TextMessageBox
                 className='input-box w-100 mt-2 card px-3 py-2'
@@ -229,9 +230,10 @@ function Contact() {
                 rows='5'
                 onChange={handleChange}
               />
+              {/* 
               {errors.message && (
                 <span className='error'>{errors.message}</span>
-              )}
+              )}*/}
             </div>
             <div className='d-flex'>
               <button
