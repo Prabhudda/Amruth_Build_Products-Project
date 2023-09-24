@@ -30,39 +30,26 @@ app.post('/contact', (req, res) => {
     from: process.env.ADMIN_EMAIL, // Use the email provided in the form
     to: process.env.ADMIN_EMAIL, // Replace with your email
     subject: 'Amruth Build Products Form Submission Mail',
-    html: ` <html>
-    <head>
-      <style>
-        /* Define inline styles here */
-        .email-container {
-          font-family: Arial, sans-serif;
-          border: 1px solid #ccc;
-          padding: 20px;
-          margin: 20px;
-        }
-        .label {
-          font-weight: bold;
-        }
-      </style>
-    </head>
+    html: `
+    <html>
     <body>
-      <div class="email-container">
-        <table>
+      <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; margin: 20px;">
+        <table style="width: 100%; border-collapse: collapse;">
           <tr>
-            <td class="label" width="100">Name:</td>
-            <td width="300">${name}</td>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Name:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${name}</td>
           </tr>
           <tr>
-            <td class="label" width="100">Email:</td>
-            <td width="300">${email}</td>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Email:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${email}</td>
           </tr>
           <tr>
-            <td class="label" width="100">Contact:</td>
-            <td width="300">${number}</td>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Contact:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${number}</td>
           </tr>
           <tr>
-            <td class="label" width="100">Message:</td>
-            <td width="300">${message}</td>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Message:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${message}</td>
           </tr>
         </table>
       </div>
