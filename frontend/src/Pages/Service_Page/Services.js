@@ -517,10 +517,7 @@ function Services() {
                     Solid Blocks & Paver Blocks for robust structures, Kerb
                     Stones & Precast Compound Walls for safety and aesthetics.
                   </p>
-                  <Link
-                    to='/products#construction-materials2'
-                    className='btn btn-outline-primary'
-                  >
+                  <Link to='/products' className='btn btn-outline-primary'>
                     Read More
                   </Link>
                 </div>

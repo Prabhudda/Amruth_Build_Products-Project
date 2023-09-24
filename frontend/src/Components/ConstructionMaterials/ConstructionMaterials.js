@@ -93,10 +93,7 @@ function ConstructionMaterials() {
         </p>
       </div>
       <div className='text-center'>
-        <Link
-          to='/products#construction-materials'
-          className=' btn btn-outline-primary px-5'
-        >
+        <Link to='/products' className=' btn btn-outline-primary px-5'>
           Explore <FaAngleDoubleRight />
         </Link>
       </div>

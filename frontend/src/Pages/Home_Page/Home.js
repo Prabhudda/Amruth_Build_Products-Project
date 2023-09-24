@@ -227,10 +227,7 @@ function Home() {
                 functionality with aesthetics for beautifully crafted spaces
                 that resonate with your aspirations.
               </p>
-              <Link
-                to='/services#planning-designing'
-                className='btn btn-outline-primary'
-              >
+              <Link to='/services' className='btn btn-outline-primary'>
                 Get More <RxArrowTopRight />
               </Link>
             </div>
@@ -250,10 +247,7 @@ function Home() {
                 With detailed cost breakdowns and advanced tools, you can
                 confidently manage your project budget without hidden surprises.
               </p>
-              <Link
-                to='/services#estimation-costing'
-                className='btn btn-outline-primary'
-              >
+              <Link to='/services' className='btn btn-outline-primary'>
                 Get More <RxArrowTopRight />
               </Link>
             </div>
@@ -290,10 +284,7 @@ function Home() {
                 construction, and more, ensuring a seamless experience and
                 exceptional results.
               </p>
-              <Link
-                to='/services#turnkey-projects'
-                className='btn btn-outline-primary'
-              >
+              <Link to='/services' className='btn btn-outline-primary'>
                 Get More <RxArrowTopRight />
               </Link>
             </div>
