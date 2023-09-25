@@ -39,11 +39,10 @@ app.post('/contact', (req, res) => {
             <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Name:</td>
             <td style="border: 1px solid #ccc; padding: 5px;">${name}</td>
           </tr>
-          {email ? <tr>
+          <tr>
             <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Email:</td>
             <td style="border: 1px solid #ccc; padding: 5px;">${email}</td>
-          </tr>:" "}
-
+          </tr>
           <tr>
             <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Contact:</td>
             <td style="border: 1px solid #ccc; padding: 5px;">${number}</td>
