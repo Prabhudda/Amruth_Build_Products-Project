@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 5001;
 require('dotenv').config();
 
 const transporter = nodemailer.createTransport({
@@ -90,7 +90,7 @@ app.get('/attributes', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('server is running on port number 8000');
+  console.log(`server is running on port number ${PORT}`);
 });
 
 // const express = require('express');
@@ -158,26 +158,26 @@ app.listen(PORT, () => {
 //   );
 // });
 
-app.get('/attributes', (req, res) => {
-  res.send(
-    `<div>
-    <h1>we use pictures from Vecteezy, Unspalsh, Pixabay, Pexeles</h1>
-    <a href='https://www.vecteezy.com/free-vector/support'>
-        Support Vectors by Vecteezy
-    </a><br><br>
-    <a href='https://unsplash.com/'>
-    unspalsh
-    </a><br><br>
-    <a href='https://pixabay.com/'>
-    pixabay
-    </a><br><br>
-    <a href='https://www.pexels.com/'>
-    pexels
-    </a>
-    </div>`
-  );
-});
+// app.get('/attributes', (req, res) => {
+//   res.send(
+//     `<div>
+//     <h1>we use pictures from Vecteezy, Unspalsh, Pixabay, Pexeles</h1>
+//     <a href='https://www.vecteezy.com/free-vector/support'>
+//         Support Vectors by Vecteezy
+//     </a><br><br>
+//     <a href='https://unsplash.com/'>
+//     unspalsh
+//     </a><br><br>
+//     <a href='https://pixabay.com/'>
+//     pixabay
+//     </a><br><br>
+//     <a href='https://www.pexels.com/'>
+//     pexels
+//     </a>
+//     </div>`
+//   );
+// });
 
-app.listen(PORT, () => {
-  console.log('Server is running on port number', PORT);
-});
+// app.listen(PORT, () => {
+//   console.log('Server is running on port number', PORT);
+// });
