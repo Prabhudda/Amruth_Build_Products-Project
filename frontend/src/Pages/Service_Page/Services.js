@@ -425,7 +425,7 @@ function Services() {
               </div>
             </div>
             <div
-              className='row manufacturing-container d-flex align-items-center p-sm-5 p-2'
+              className='row manufacturing-container d-flex align-items-center p-sm-5 p-2 my-5'
               style={{ backgroundColor: 'white' }}
             >
               <div

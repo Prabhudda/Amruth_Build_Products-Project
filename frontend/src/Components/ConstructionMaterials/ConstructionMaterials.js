@@ -16,7 +16,7 @@ function ConstructionMaterials() {
       <h3 className='ConstructionMaterials-main-text'>
         Discover Our Quality Construction Materials
       </h3>
-      <p className='mt-5'>
+      <p className='mt-5 px-sm-0 px-2'>
         Explore our extensive selection of construction materials tailored to
         meet the demands of your projects. From <strong>Cement</strong> and
         <strong> TMT Steel</strong> to <strong>M Sand</strong>,
@@ -85,7 +85,7 @@ function ConstructionMaterials() {
           <h5 className='fw-bold mt-3'>M Sand</h5>
         </div>
       </div>
-      <div className='mt-3'>
+      <div className='mt-3 px-sm-0 px-2'>
         <p>
           Elevate your construction with our precise, top-quality materials.
           From foundations to finishing touches, our products deliver unmatched

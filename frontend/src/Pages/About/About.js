@@ -27,21 +27,23 @@ function About() {
             <h3 className='about-main-text'>Company Profile</h3>
           </div>
           <div className='mt-5'>
-            <p className=''>
+            <p className='text-left mx-md-0 mx-3'>
               We take pride in being an innovative construction and
               manufacturing company, dedicated to providing top-notch solutions
-              for all your construction needs. With years of experience and
-              expertise, we have earned a reputation for excellence in the
-              industry. Our commitment to quality, customer satisfaction, and
-              sustainable practices sets us apart as a trusted partner for your
-              construction projects.
+              for all your construction needs.
+            </p>
+            <p className='text-left mx-md-0 mx-3'>
+              With years of experience and expertise, we have earned a
+              reputation for excellence in the industry. Our commitment to
+              quality, customer satisfaction, and sustainable practices sets us
+              apart as a trusted partner for your construction projects.
             </p>
           </div>
         </div>
       </div>
       <div className='container mt-5'>
         <div className='row d-flex justify-content-around align-items-center'>
-          <div className='col-lg-6 col-12'>
+          <div className='col-lg-6 col-11'>
             <img
               loading='lazy'
               className='img-fluid company-img-box'
@@ -49,7 +51,7 @@ function About() {
               alt='company-img'
             />
           </div>
-          <div className='col-lg-6 col-12 mt-lg-0 mt-4'>
+          <div className='col-lg-6 col-11 mt-lg-0 mt-4'>
             <img
               loading='lazy'
               className='img-fluid company-img-box'
@@ -61,15 +63,15 @@ function About() {
       </div>
 
       <div className='position-relative our-values-container container p-0 text-center'>
-        <h3 className='about-main-text'>Framing Our Values</h3>
+        <h3 className='about-main-text text-center'>Framing Our Values</h3>
         <div className='row p-3 d-md-flex flex-md-row flex-row-reverse justify-content-around align-items-center mt-5'>
           <div
-            className='col-lg-5 col-md-6 col-12 p-3 mt-md-0 mt-3 py-3 px-2 about-shadow'
+            className='col-lg-5 col-md-12 col-11 p-4 mt-md-0 mt-3  about-shadow'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
             <AiOutlineEye size={50} />
-            <h2 className='content-sub-text'>Vision</h2>
+            <h2 className='content-sub-text fs-3 fw-bold mt-1'>Vision</h2>
             <p>
               Turning ideas into reality, we reflect our commitment through
               every structure we create. Quality, innovation, and sustainability
@@ -77,25 +79,27 @@ function About() {
             </p>
           </div>
           <div
-            className='col-lg-5 col-md-6 col-12 mt-md-0 mt-3 py-3 px-2 about-shadow'
+            className='col-lg-5 col-md-12 col-11 mt-lg-0 mt-5 p-4 about-shadow'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
             <TbTargetArrow size={50} />
-            <h2 className='content-sub-text'>Mission</h2>
-            <p>
+            <h2 className='content-sub-text fs-3 fw-bold mt-1'>Mission</h2>
+            <p className=''>
               Elevating excellence through inspiring spaces, lasting
               creations,and driven by both technology and unwavering dedication
               in construction and manufacturing.
             </p>
           </div>
           <div
-            className='col-lg-5 col-md-6 col-12 mt-md-5 mt-4  py-3 px-2 about-shadow'
+            className='col-lg-5 col-md-12 col-11 mt-5  p-4 about-shadow'
             data-aos='fade-up'
             data-aos-duration='1200'
           >
             <FaHandsHelping size={50} />
-            <h2 className='content-sub-text'>Collaborative Approach</h2>
+            <h2 className='content-sub-text fs-5 fw-bold mt-1'>
+              Collaborative Approach
+            </h2>
             <p>
               Empowered by collaboration, we partner closely with clients to
               realize their visions. Shared goals and commitment drive every
@@ -104,15 +108,15 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='container position-relative'>
+      <div className='container position-relative my-5'>
         <div className='row d-flex justify-content-between align-items-center'>
           <div
             className='col-lg-5 col-12'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
-            <h3 className='about-main-text text-center'>Who We Are</h3>
-            <p className='mt-5 text-center'>
+            <h3 className='about-main-text'>Who We Are</h3>
+            <p className='mt-5 px-sm-0 px-3 paragraphs'>
               Beyond a company, a passion, a vision, a commitment. With over 2
               years of expertise, we've refined our craft into an art. Our
               skilled team turns your concepts into enduring realities through
@@ -120,16 +124,15 @@ function About() {
             </p>
           </div>
           <div
-            className='col-lg-5 col-12 mt-md-0 mt-5'
+            className='col-lg-5 col-12 mt-lg-0 mt-5'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
-            <h3 className='about-main-text text-center'>What Sets Us Apart</h3>
-            <p className='mt-5 text-center'>
-              Uniqueness drives us. Quality and customer happiness are our
-              foundations. Meticulous attention, unwavering commitment, and
-              sustainable practices define us. Trust in our promise for
-              exceptional results and a greener future.
+            <h3 className='about-main-text'>What Sets Us Apart</h3>
+            <p className='mt-5 px-sm-0 px-3  paragraphs'>
+              Uniqueness drives us.Quality and customer happiness are our
+              foundations.Trust in our promise for exceptional results and a
+              greener future.
             </p>
           </div>
         </div>
@@ -142,9 +145,9 @@ function About() {
             data-aos-duration='1000'
           >
             <h3 className='text-center about-main-text'>What We Do</h3>
-            <p className='mt-5 text-center'>
+            <p className='mt-5 px-sm-0 px-3  paragraphs'>
               Our services span construction and manufacturing, executed with
-              precision, ingenuity, and excellence. Offerings include:
+              precision, ingenuity, and excellence.
             </p>
           </div>
         </div>

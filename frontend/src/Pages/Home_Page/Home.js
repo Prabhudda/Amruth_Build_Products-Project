@@ -217,7 +217,7 @@ function Home() {
               />
             </div>
             <div
-              className='col-lg-6 col-12 mt-md-0 mt-3 p-lg-5 py-4 px-2'
+              className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2'
               data-aos='fade-up'
               data-aos-duration='1100'
             >
@@ -237,7 +237,7 @@ function Home() {
             style={{ backgroundColor: '#F3FDE8' }}
           >
             <div
-              className='col-lg-6 col-12 mt-md-0 mt-3 p-lg-5 py-4 px-2 order-lg-0 order-1'
+              className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2 order-lg-0 order-1'
               data-aos='fade-up'
               data-aos-duration='1200'
             >
@@ -273,7 +273,7 @@ function Home() {
               />
             </div>
             <div
-              className='col-lg-6 col-12 mt-md-0 mt-3 p-lg-5 py-4 px-2'
+              className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2'
               data-aos='fade-up'
               data-aos-duration='1200'
             >
