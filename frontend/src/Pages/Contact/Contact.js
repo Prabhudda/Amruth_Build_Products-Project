@@ -57,7 +57,6 @@ function Contact() {
 
   const isValidNumber = (number) => {
     if (number === undefined) {
-      // Handle the case where number is undefined (e.g., not provided in formData)
       return false;
     }
     return (
@@ -81,20 +80,11 @@ function Contact() {
       newErrors.name = 'Please enter your name';
     }
 
-    // if (!isValidEmail(formData.email)) {
-    //   newErrors.email = 'please provide your email';
-    // }
-
     if (!isValidNumber(formData.number)) {
       newErrors.number = 'please enter valid number';
     }
 
-    // if (!isValidMessage(formData.message)) {
-    //   newErrors.message = 'Message must be between 10 and 1000 characters';
-    // }
-
     if (Object.keys(newErrors).length > 0) {
-      // Display error messages to the user
       setErrors(newErrors);
     } else {
       try {
@@ -111,27 +101,12 @@ function Contact() {
           'https://amruth-build-products-backend.onrender.com/contact',
           formData
         );
-
         console.log('Form submitted successfully!', response.data);
-
-        // setFormData({
-        //   name: '',
-        //   email: '',
-        //   number: '',
-        //   message: '',
-        // });
-        // setErrors({});
-        // setDataSubmittedMessage(true);
       } catch (error) {
         console.error('Error submitting the form:', error);
-        // Handle errors or show an error message to the user
       }
     }
   };
-
-  // setTimeout(() => {
-  //   setDataSubmittedMessage(false);
-  // }, 10000);
 
   return (
     <div className='contact-main-container container-fluid p-0'>

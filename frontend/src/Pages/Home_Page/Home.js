@@ -15,7 +15,7 @@ import TMT from '..//..//assets/turbo-steel.jpg';
 import ts from '..//..//assets/ts-new.png';
 import ManufacturingMaterials from '..//..//Components/Manufacturing/Manufacturing';
 import ConstructionMaterials from '..//..//Components/ConstructionMaterials/ConstructionMaterials';
-
+import qw from '..//..//assets/qw.png';
 const data = [
   {
     id: 1,
@@ -26,20 +26,27 @@ const data = [
   },
   {
     id: 2,
+    title: 'Amruth Build Products',
+    txt: 'Build a Better Future',
+    img: `${img1}`,
+    tt: 'Innovative Construction & Manufacturing Company',
+  },
+  {
+    id: 3,
     title: 'Services',
     txt: 'Planning & Designing',
     img: `${img2}`,
     tt: 'Blueprinting Your Dreams , Where Imagination Meets Architecture',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Services',
     txt: 'Estimation and Costing',
     img: `${logo}`,
     tt: 'Building with Precision, Budget in Mind',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Services',
     txt: 'Turn Key Projects',
     img: `${img3}`,
@@ -73,7 +80,7 @@ function Home() {
 
   return (
     <div
-      className='home-head-component position-relative container-fluid px-0  my-5'
+      className='home-head-component position-relative container-fluid px-0  my-4'
       style={{ overflow: 'hidden' }}
     >
       <div className='home-main-container'>
@@ -98,7 +105,30 @@ function Home() {
           </button>
         </div> */}
       </div>
-
+      {/* 
+      <div className='container-fluid vh-100 d-flex justify-content-left align-items-center position-relative'>
+        <div className='container d-flex justify-content-between align-items-center'>
+          <div>
+            <div className='container' key={id}>
+              <h1 className=''>{title}</h1>
+              <h2 className=' mt-3 d-md-block d-none'>{txt}</h2>
+              <h5 className='mt-3 d-lg-block d-none'>{tt}</h5>
+            </div>
+            <div className='mt-5 container'>
+              <Link
+                className='explore-link btn btn-outline-primary'
+                to='/about'
+              >
+                Explore More
+              </Link>
+            </div>
+          </div>
+          <div>
+            <img src={qw} width={500} height={500}></img>
+          </div>
+        </div>
+      </div>
+*/}
       <div className='container my-5'>
         <div className=''>
           <h3 className='text-center main-text main-text-1'>

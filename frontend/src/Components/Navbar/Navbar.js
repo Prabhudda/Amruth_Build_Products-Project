@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '..//..//assets/logo.jpg';
@@ -31,11 +31,7 @@ const NavUl = styled.ul`
       props.$isopen &&
       css`
         height: 100vh;
-      `}/* ${(props) =>
-      props.isopen &&
-      css`
-        height: 50vh;
-      `} */
+      `}
   }
 `;
 
@@ -59,10 +55,22 @@ function Navbar() {
   const handleToggle = () => {
     setisopen(!isopen);
   };
+
   const location = useLocation();
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 300 ? setScroll(true) : setScroll(false);
+    });
+  }, []);
+
   return (
     <div className='position-relative'>
-      <NavbarContainer className='navbar fixed-top navbar-expand-lg navbar-container'>
+      <NavbarContainer
+        className={`${
+          scroll ? 'after-scroll' : 'before-scroll'
+        } navbar fixed-top navbar-expand-lg navbar-container`}
+      >
         <NavbarHeader className='container-fluid d-flex pl-0 justify-content-between align-items-center mx-md-4'>
           <Link
             className='d-flex justify-content-center align-items-center'
@@ -72,7 +80,7 @@ function Navbar() {
             <img src={Logo} className='mx-2 logo' alt='logo' loading='lazy' />
             <span className='company-text px-2'>Amruth Build Products</span>
           </Link>
-          <Nav className=''>
+          <Nav>
             <div className='text-center '>
               <NavUl
                 className='navUl m-0 d-flex justify-content-center align-items-center'
