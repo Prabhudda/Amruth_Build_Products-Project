@@ -18,7 +18,8 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: 'https://amruthbuildproducts.netlify.app', // Replace with your Netlify site's URL
+    // origin: 'https://amruthbuildproducts.netlify.app', // Replace with your Netlify site's URL
+    origin: 'https://www.amruthbuildproducts.com',
   })
 );
 

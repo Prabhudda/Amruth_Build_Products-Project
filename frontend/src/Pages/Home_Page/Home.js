@@ -15,7 +15,9 @@ import TMT from '..//..//assets/turbo-steel.jpg';
 import ts from '..//..//assets/ts-new.png';
 import ManufacturingMaterials from '..//..//Components/Manufacturing/Manufacturing';
 import ConstructionMaterials from '..//..//Components/ConstructionMaterials/ConstructionMaterials';
-import qw from '..//..//assets/qw.png';
+// import qw from '..//..//assets/qw.png';
+// import sw from '..//..//assets/sw.png';
+
 const data = [
   {
     id: 1,
@@ -106,15 +108,18 @@ function Home() {
         </div> */}
       </div>
       {/* 
-      <div className='container-fluid vh-100 d-flex justify-content-left align-items-center position-relative'>
-        <div className='container d-flex justify-content-between align-items-center'>
-          <div>
-            <div className='container' key={id}>
-              <h1 className=''>{title}</h1>
+      <div
+        className='container-fluid vh-100 d-flex justify-content-left align-items-center position-relative'
+        style={{ backgroundColor: '#D2E0FB' }}
+      >
+        <div className='container d-md-flex justify-content-between align-items-center'>
+          <div className='col-md-8 col-10'>
+            <div className='container ' key={id}>
+              <h1 className='fs-6'>{title}</h1>
               <h2 className=' mt-3 d-md-block d-none'>{txt}</h2>
               <h5 className='mt-3 d-lg-block d-none'>{tt}</h5>
             </div>
-            <div className='mt-5 container'>
+            <div className='mt-5  container'>
               <Link
                 className='explore-link btn btn-outline-primary'
                 to='/about'
@@ -123,12 +128,12 @@ function Home() {
               </Link>
             </div>
           </div>
-          <div>
-            <img src={qw} width={500} height={500}></img>
+          <div className='col-md-8 col-10'>
+            <img className='img-fluid' src={sw} width={500} height={500}></img>
           </div>
         </div>
       </div>
-*/}
+      */}
       <div className='container my-5'>
         <div className=''>
           <h3 className='text-center main-text main-text-1'>
