@@ -108,23 +108,26 @@
         background-color:#fff;
         color: #014AA8;
     }
-
-    .main-text{
+    .main-text {
         font-size: 45px;
         position: relative;
         color: #0b0757;
+        text-align: center; /* Center the text horizontally */
     }
-    .main-text::before{
+    
+    .main-text::before {
         content: '';
-        margin-top: 10px;
-        width: 200px;
+        width: 200px; /* Adjust the width as needed */
         height: 5px;
         position: absolute;
-        bottom: -20px;
-        color: transparent;
-        background: transparent linear-gradient(99deg, #5338FF 0%,#FFC465 100%) 0% 0% no-repeat padding-box;
+        left: 50%; /* Center it horizontally */
+        transform: translateX(-50%); /* Center it horizontally */
+        background: linear-gradient(99deg, #5338FF 0%, #FFC465 100%);
         border-radius: 5px;
+        bottom: -10px;
+        z-index: -1; /* Place it behind the text */
     }
+
     .trusted-text-container{
         margin-top: 100px;
         /* padding: 50px; */
@@ -325,15 +328,10 @@
             position: relative;
             color: #0b0757;
         }
-        .main-text-1::before{
-            width: 50%;
-            height: 3px;
-            transform: translate(40%,0%);
-        }
-        .main-text-2::before{
-            width: 50%;
-            height: 3px;
-            transform: translate(31%,0%);
+        .main-text::before {
+            content: '';
+            width: 150px; /* Adjust the width as needed */
+            height: 4px;
         }
         .trusted-text-container{
             margin-top: 20px;

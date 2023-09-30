@@ -566,7 +566,9 @@ function Products() {
             style={{ backgroundColor: '#EEEEEE' }}
           >
             <div className='col-lg-7 col-12 my-md-5 my-2 px-4'>
-              <h5 className='products-sub-text py-sm-3 p-0'>Dust</h5>
+              <h5 className='products-sub-text py-sm-3 p-0 mt-sm-0 mt-3'>
+                Dust
+              </h5>
               <p>
                 we offer specialized Dust services that contribute to the
                 precision and flawless finishes of your construction projects.

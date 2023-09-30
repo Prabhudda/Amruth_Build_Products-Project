@@ -9,14 +9,15 @@
 }
 .products-main-text::before{
     content: '';
-    margin-top: 10px;
     width: 200px;
     height: 5px;
     position: absolute;
-    bottom: -20px;
-    color: transparent;
-    background: transparent linear-gradient(99deg, #5338FF 0%,#FFC465 100%) 0% 0% no-repeat padding-box;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: linear-gradient(99deg, #5338FF 0%, #FFC465 100%);
     border-radius: 5px;
+    bottom: -10px;
+    z-index: -1; 
 }
 .content-sub-text{
     color: #0b0757;
@@ -47,30 +48,64 @@
 }
 @media (max-width:450px) {
     .products-main-text{
-        font-size: 30px;
+        font-size: 25px;
         position: relative;
         color: #0b0757;
     }
     .products-main-title{
         text-align: center;
-        font-size: 30px;
+        font-size: 22px;
         padding: 0px 15px;
     }
-    .products-main-box{
-        margin-top: 70px;
-    }
     .products-sub-text{
-        font-size: 25px;
+        font-size: 25px !important;
         font-weight: bold;
         color: #0b0757;
     }
     .products-advantage-title{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         color: #0b0757;
     }
     .content-sub-text{
         color: #0b0757;
         font-size: 18px;
+    }
+    .products-main-text::before{
+        width: 160px; 
+        height: 5px;
+    }
+}
+@media (max-width:325px) {
+    .products-main-text{
+        font-size: 23px;
+        position: relative;
+        color: #0b0757;
+    }
+    .products-main-title{
+        text-align: center;
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+    .products-main-box{
+        margin-top: 70px;
+    }
+    .products-sub-text{
+        font-size: 20px;
+        font-weight: bold;
+        color: #0b0757;
+    }
+    .products-advantage-title{
+        font-size: 18px;
+        font-weight: bold;
+        color: #0b0757;
+    }
+    .content-sub-text{
+        color: #0b0757;
+        font-size: 18px;
+    }
+    .products-main-text::before{
+        width: 80px;
+        height: 5px;
     }
 }

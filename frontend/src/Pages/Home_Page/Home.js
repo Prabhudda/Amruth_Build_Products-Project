@@ -136,7 +136,7 @@ function Home() {
       */}
       <div className='container my-5'>
         <div className=''>
-          <h3 className='text-center main-text main-text-1'>
+          <h3 className='text-center main-text'>
             Building Your Vision, Brick by Brick
           </h3>
         </div>
@@ -180,7 +180,7 @@ function Home() {
           data-aos='fade-up'
           data-aos-duration='1100'
         >
-          <h3 className='main-text text-center main-text-2'>
+          <h3 className='main-text text-center'>
             Trusted by well known companies
           </h3>
           <p className='sub-text mt-5 text-center'>

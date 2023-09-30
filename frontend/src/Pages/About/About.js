@@ -63,7 +63,7 @@ function About() {
       </div>
 
       <div className='position-relative our-values-container container p-0 text-center'>
-        <h3 className='about-main-text text-center'>Framing Our Values</h3>
+        <h3 className='about-main-text text-center px-1'>Framing Our Values</h3>
         <div className='row p-3 d-md-flex flex-md-row flex-row-reverse justify-content-around align-items-center mt-5'>
           <div
             className='col-lg-5 col-md-12 col-11 p-4 mt-md-0 mt-3  about-shadow'

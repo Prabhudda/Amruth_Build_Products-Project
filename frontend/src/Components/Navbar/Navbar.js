@@ -71,16 +71,23 @@ function Navbar() {
           scroll ? 'after-scroll' : 'before-scroll'
         } navbar fixed-top navbar-expand-lg navbar-container`}
       >
-        <NavbarHeader className='container-fluid d-flex pl-0 justify-content-between align-items-center mx-md-4'>
+        <NavbarHeader className='container-fluid d-flex justify-content-between align-items-center mx-md-4 px-0'>
           <Link
-            className='d-flex justify-content-center align-items-center'
+            className='d-flex justify-content-center align-items-center '
             to='/'
             style={{ textDecoration: 'none' }}
           >
-            <img src={Logo} className='mx-2 logo' alt='logo' loading='lazy' />
-            <span className='company-text px-2'>Amruth Build Products</span>
+            <img
+              src={Logo}
+              className='mx-sm-2 mx-1 logo'
+              alt='logo'
+              loading='lazy'
+            />
+            <span className='company-text px-sm-2 px-0  '>
+              Amruth Build Products
+            </span>
           </Link>
-          <Nav>
+          <Nav className='px-sm-2 px-1'>
             <div className='text-center '>
               <NavUl
                 className='navUl m-0 d-flex justify-content-center align-items-center'

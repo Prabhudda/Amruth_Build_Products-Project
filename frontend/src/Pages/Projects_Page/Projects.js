@@ -10,21 +10,23 @@ import wareHouse3 from '..//..//assets/warehouse3.jpg';
 import wareHouse4 from '..//..//assets/warehouse4.jpg';
 import '../Projects_Page/Projects.css';
 const projectsData = [
+  // {
+  //   id: 1,
+  //   title: 'Project A',
+  //   status: 'ongoing',
+  //   description:
+  //     'This is an ongoing project focused on developing a new mobile app.',
+  //   startDate: '2023-01-15',
+  //   endDate: null,
+  // },
   {
     id: 1,
-    title: 'Project A',
-    status: 'ongoing',
-    description:
-      'This is an ongoing project focused on developing a new mobile app.',
-    startDate: '2023-01-15',
-    endDate: null,
-  },
-  {
-    id: 2,
     title: 'Asphalt Road Project :',
     status: 'completed',
-    description:
-      'Our dedicated civil team recently achieved a significant milestone by completing a comprehensive road construction project that has transformed local infrastructure and connectivity. This project, undertaken with unwavering commitment and technical expertise, has not only improved the physical landscape but also enhanced the lives of residents and travelers within the community.',
+    description1:
+      'Our dedicated civil team recently achieved a significant milestone by completing a comprehensive road construction project that has transformed local infrastructure and connectivity.',
+    description2:
+      'This project, undertaken with unwavering commitment and technical expertise, has not only improved the physical landscape but also enhanced the lives of residents and travelers within the community.',
     startDate: '2022-05-10',
     endDate: '2022-09-30',
     img1: `${Road1}`,
@@ -33,11 +35,13 @@ const projectsData = [
     img4: `${Road4}`,
   },
   {
-    id: 3,
+    id: 2,
     title: 'Warehouse Construction :',
     status: 'completed',
-    description:
-      'We are thrilled to announce the successful completion of Warehouse Project, a remarkable warehouse construction endeavor that underscores our unwavering commitment to excellence and innovation in the construction industry. We turn your visions into reality, and Warehouse Project is a testament to our dedication.',
+    description1:
+      'We are thrilled to announce the successful completion of Warehouse Project, a remarkable warehouse construction endeavor that underscores our unwavering commitment to excellence and innovation in the construction industry.',
+    description2:
+      'We turn your visions into reality, and Warehouse Project is a testament to our dedication.',
     startDate: '2022-05-10',
     endDate: '2022-09-30',
     img1: `${wareHouse1}`,
@@ -52,9 +56,9 @@ const projectsData = [
 const Projects = () => {
   const [activeTab] = useState('ongoing');
 
-  const ongoingProjects = projectsData.filter(
-    (project) => project.status === 'ongoing'
-  );
+  // const ongoingProjects = projectsData.filter(
+  //   (project) => project.status === 'ongoing'
+  // );
   const completedProjects = projectsData.filter(
     (project) => project.status === 'completed'
   );
@@ -91,9 +95,10 @@ const Projects = () => {
         </div>
       </div>
       <div className='container d-flex justify-content-center align-items-center'></div>
-      <div className='my-5'>
+      <div className='my-5 '>
         {activeTab === 'ongoing' && (
           <div className=''>
+            {/* 
             <div
               className='container'
               data-aos='fade-up'
@@ -110,7 +115,8 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-            <div className='container mt-5'>
+            */}
+            <div className='container mt-5 '>
               <h2
                 className='projects-main-text'
                 data-aos='fade-up'
@@ -118,22 +124,27 @@ const Projects = () => {
               >
                 Completed Projects
               </h2>
-              <div className='mt-5'>
+              <div className=''>
                 {completedProjects.map((project) => (
-                  <div key={project.id}>
+                  <div className='my-sm-0 my-2' key={project.id}>
                     <div
-                      className=''
+                      className='p-sm-0 p-3'
                       data-aos='fade-up'
                       data-aos-duration='1000'
                     >
-                      <h4 className='mt-5 service-main-text'>
+                      <h4 className='mt-sm-5 mt-3 projects-sub-text'>
                         {project.title}
                       </h4>
-                      <p className='mt-1'>{project.description}</p>
-                      <p className='mt-3'>Start Date: {project.startDate}</p>
-                      <p className='mt-3'>End Date: {project.endDate}</p>
+                      <p className='mt-1'>{project.description1}</p>
+                      <p className='mt-1'>{project.description2}</p>
+                      <p className='mt-3 fw-bold'>
+                        Start Date: {project.startDate}
+                      </p>
+                      <p className='mt-3 fw-bold'>
+                        End Date: {project.endDate}
+                      </p>
                     </div>
-                    <div className='row d-flex justify-content-center align-items-center'>
+                    <div className='row p-sm-0 p-3 d-flex justify-content-center align-items-center'>
                       <div
                         className='col-md-4 col-12 mt-3'
                         data-aos='fade-up'

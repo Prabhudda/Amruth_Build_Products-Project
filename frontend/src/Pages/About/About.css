@@ -27,16 +27,16 @@
     position: relative;
     color: #0b0757;
 }
-.about-main-text::before{
+    
+.about-main-text::before {
     content: '';
-    margin-top: 10px;
-    width: 200px;
+    width: 200px; /* Adjust the width as needed */
     height: 5px;
     position: absolute;
-    bottom: -20px;
-    color: transparent;
-    background: transparent linear-gradient(99deg, #5338FF 0%,#FFC465 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(99deg, #5338FF 0%, #FFC465 100%);
     border-radius: 5px;
+    bottom: -10px;
+    z-index: -1; /* Place it behind the text */
 }
 /* .company-img-box{
     width: 100%;
@@ -91,7 +91,7 @@
 }
 @media (max-width:450px) {
     .about-main-text{ 
-        font-size: 30px;
+        font-size: 25px;
         position: relative;
         color: #0b0757;
         text-align: center !important;
@@ -119,5 +119,13 @@
         text-align: center !important;
         word-break: break-word;
         letter-spacing: -0.2px;
+    }
+}
+@media (max-width:325px) {
+    .about-main-text{ 
+        font-size: 23px;
+        position: relative;
+        color: #0b0757;
+        text-align: center !important;
     }
 }

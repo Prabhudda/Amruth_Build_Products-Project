@@ -15,14 +15,15 @@
 }
 .contact-main-text::before{
     content: '';
-    margin-top: 10px;
     width: 200px;
     height: 5px;
     position: absolute;
-    bottom: -20px;
-    color: transparent;
-    background: transparent linear-gradient(99deg, #5338FF 0%,#FFC465 100%) 0% 0% no-repeat padding-box;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: linear-gradient(99deg, #5338FF 0%, #FFC465 100%);
     border-radius: 5px;
+    bottom: -10px;
+    z-index: -1; 
 }
 .contact-box{
     height: 200px;
@@ -74,15 +75,11 @@ color: #0b0757;
         margin-top: 70px;
     }
     .contact-main-text::before{
-        content: '';
-        margin-top: 10px;
-        width: 100px;
-        height: 5px;
-        position: absolute;
-        bottom: -20px;
-        left: 35%;
-        color: transparent;
-        background: transparent linear-gradient(99deg, #5338FF 0%,#FFC465 100%) 0% 0% no-repeat padding-box;
-        border-radius: 5px;
+    width: 160px;
     }
+}
+@media (max-width:325px) {
+    .contact-main-text::before{
+        width: 80px;
+        }
 }

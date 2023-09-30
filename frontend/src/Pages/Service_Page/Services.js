@@ -32,10 +32,10 @@ function Services() {
         </div>
       </div>
       <div className='container mt-sm-5 mt-0 '>
-        <h2 className='text-center comprehensive-service-text'>
+        <h2 className='text-center comprehensive-service-text d-lg-block d-none'>
           Our comprehensive range of services
         </h2>
-        <div className='comprehensive-service-box d-md-block d-none'>
+        <div className='comprehensive-service-box d-lg-block d-none'>
           <div className='row text-center d-flex justify-content-around align-items-center'>
             <div
               className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'

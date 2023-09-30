@@ -83,6 +83,21 @@ font-family: 'Poppins', sans-serif; */
     opacity: 100%;
 }
 
+@media (max-width:992px){
+    .LogoRound{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    
+    .li{
+        /* margin-top: 20px !important; */
+        line-height: 70px;
+        font-weight: bold;
+        opacity: 1 !important;
+    }
+}
+
 @media (max-width:450px) {
     .company-text{
         color: #0b0757;
@@ -104,17 +119,16 @@ font-family: 'Poppins', sans-serif; */
         opacity: 1 !important;
     }
 }
-@media (max-width:992px){
-    .LogoRound{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+
+
+@media (max-width:325px){
+    .company-text{
+        color: #0b0757;
+        font-size: 14px;
     }
-    
-    .li{
-        /* margin-top: 20px !important; */
-        line-height: 70px;
-        font-weight: bold;
-        opacity: 1 !important;
+    .logo{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
     }
 }
