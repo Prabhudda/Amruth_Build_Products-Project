@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home_Page/Home';
 import About from './Pages/About/About';
@@ -25,31 +25,12 @@ function App() {
         <Whatsapp />
         <ScrollToTop />
         <Routes>
-          <Route
-            path='https://www.amruthbuildproducts.com/'
-            exact
-            element={<Home />}
-          />
-          <Route
-            path='https://www.amruthbuildproducts.com/about'
-            element={<About />}
-          />
-          <Route
-            path='https://www.amruthbuildproducts.com/products'
-            element={<Products />}
-          />
-          <Route
-            path='https://www.amruthbuildproducts.com/projects'
-            element={<Projects />}
-          />
-          <Route
-            path='https://www.amruthbuildproducts.com/services'
-            element={<Services />}
-          />
-          <Route
-            path='https://www.amruthbuildproducts.com/contact'
-            element={<Contact />}
-          />
+          <Route path='/' exact element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/contact' element={<Contact />} />
           {/*<Route path='/team' element={<Team />} /> */}
         </Routes>
         <Footer />
