@@ -33,7 +33,32 @@ app.post('/contact', (req, res) => {
     from: process.env.ADMIN_EMAIL, // Use the email provided in the form
     to: process.env.ADMIN_EMAIL, // Replace with your email
     subject: 'Amruth Build Products Form Submission Mail',
-    html: `${formSubmission}`,
+    html: `
+    <html>
+    <body>
+      <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; margin: 20px;">
+      ${formSubmission}
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Name:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${name}</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Email:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${email}</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Contact:</td>
+            <td style="border: 1px solid #ccc; padding: 5px;">${number}</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Message:</td>
+            <td style="border: 1px solid #ccc; padding: 5px; word-break: break-all; ">${message}</td>
+          </tr>
+        </table>
+      </div>
+    </body>
+  </html>`,
   };
 
   // const mailOptions = {
