@@ -26,37 +26,101 @@ app.use(
 app.post('/contact', (req, res) => {
   const { name, email, number, message } = req.body;
   console.log(email);
-
   const mailOptions = {
     from: process.env.ADMIN_EMAIL, // Use the email provided in the form
     to: process.env.ADMIN_EMAIL, // Replace with your email
     subject: 'Amruth Build Products Form Submission Mail',
     html: `
-    <html>
-    <body>
-      <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; margin: 20px;">
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Name:</td>
-            <td style="border: 1px solid #ccc; padding: 5px;">${name}</td>
-          </tr>
-          <tr>
-            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Email:</td>
-            <td style="border: 1px solid #ccc; padding: 5px;">${email}</td>
-          </tr>
-          <tr>
-            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Contact:</td>
-            <td style="border: 1px solid #ccc; padding: 5px;">${number}</td>
-          </tr>
-          <tr>
-            <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Message:</td>
-            <td style="border: 1px solid #ccc; padding: 5px; word-break: break-all; ">${message}</td>
-          </tr>
-        </table>
-      </div>
-    </body>
-  </html>`,
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Submission</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+          th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h2>Form Submission Details</h2>
+          <table>
+            <tr>
+              <th>Name:</th>
+              <td>${name}</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td>${email}</td>
+            </tr>
+            <tr>
+              <th>Contact:</th>
+              <td>${number}</td>
+            </tr>
+            <tr>
+              <th>Message:</th>
+              <td style="word-break: break-all;">${message}</td>
+            </tr>
+          </table>
+        </div>
+      </body>
+      </html>
+    `,
   };
+
+  // const mailOptions = {
+  //   from: process.env.ADMIN_EMAIL, // Use the email provided in the form
+  //   to: process.env.ADMIN_EMAIL, // Replace with your email
+  //   subject: 'Amruth Build Products Form Submission Mail',
+  //   html: `
+  //   <html>
+  //   <body>
+  //     <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; margin: 20px;">
+  //       <table style="width: 100%; border-collapse: collapse;">
+  //         <tr>
+  //           <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Name:</td>
+  //           <td style="border: 1px solid #ccc; padding: 5px;">${name}</td>
+  //         </tr>
+  //         <tr>
+  //           <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Email:</td>
+  //           <td style="border: 1px solid #ccc; padding: 5px;">${email}</td>
+  //         </tr>
+  //         <tr>
+  //           <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Contact:</td>
+  //           <td style="border: 1px solid #ccc; padding: 5px;">${number}</td>
+  //         </tr>
+  //         <tr>
+  //           <td style="font-weight: bold; border: 1px solid #ccc; padding: 5px;">Message:</td>
+  //           <td style="border: 1px solid #ccc; padding: 5px; word-break: break-all; ">${message}</td>
+  //         </tr>
+  //       </table>
+  //     </div>
+  //   </body>
+  // </html>`,
+  // };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
