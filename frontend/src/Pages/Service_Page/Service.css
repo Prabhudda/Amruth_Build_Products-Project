@@ -4,7 +4,6 @@
 }
 .serivesBgImg{
     background-image: url('..//..//assets/pic.jpg');
-    /* background-image: url('..//..//assets/elements.jpg'); */
     background-position:left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +17,6 @@
 
 }
 .estimation-costing-box{    
-    /* border-left: 3px solid #0b0757; */
     border-radius: 5px; 
     position: relative;
 }

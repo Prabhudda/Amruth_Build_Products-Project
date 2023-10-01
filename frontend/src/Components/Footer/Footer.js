@@ -29,7 +29,7 @@ function Footer() {
               <div className=''>
                 <img
                   src={Logo}
-                  alt='image'
+                  alt='img'
                   width={100}
                   height={100}
                   loading='lazy'
@@ -163,7 +163,11 @@ function Footer() {
             </div>
           </div>
           <div className='col-lg-2 col-12 mt-5'>
-            <h5 className='footer-title'>Services</h5>
+            <h5 className='footer-title'>
+              <Link to='/services' className='footer-main-link'>
+                Services
+              </Link>
+            </h5>
             <hr></hr>
             <div>
               <div>Planning</div>
@@ -174,7 +178,11 @@ function Footer() {
           </div>
 
           <div className='col-lg-2 col-12 mt-5'>
-            <h5 className='footer-title'>Manufacturing Materials </h5>
+            <h5 className='footer-title'>
+              <Link to='/products' className='footer-main-link'>
+                Manufacturing Materials
+              </Link>
+            </h5>
             <hr></hr>
             <div>
               <div>Solid Blocks</div>
@@ -182,7 +190,11 @@ function Footer() {
               <div>Kerb Stones</div>
               <div>Precast Compound Walls</div>
             </div>
-            <h5 className='footer-title mt-4'>Construction Materials</h5>
+            <h5 className='footer-title mt-4'>
+              <Link to='/products' className='footer-main-link'>
+                Construction Materials
+              </Link>
+            </h5>
             <hr></hr>
             <div>
               <div>Cement</div>
@@ -194,7 +206,11 @@ function Footer() {
             </div>
           </div>
           <div className='col-lg-2 col-12 mt-5'>
-            <h5 className='footer-title'>Reach Us At</h5>
+            <h5 className='footer-title'>
+              <Link to='/contact' className='footer-main-link'>
+                Reach Us At
+              </Link>
+            </h5>
             <hr></hr>
             <div className='d-sm-flex flex-column justify-content-center mt-sm-0 mt-4'>
               <div className='mt-2'>
@@ -239,7 +255,7 @@ function Footer() {
           </div>
         </div>
         <div className='text-center d-sm-flex justify-content-center align-items-center  d-none'>
-          <a className='Footer-ScrollToTop' href='#' title='scroll to top'>
+          <a className='Footer-ScrollToTop' href='/' title='scroll to top'>
             <AiOutlineArrowUp size={20} />
           </a>
         </div>

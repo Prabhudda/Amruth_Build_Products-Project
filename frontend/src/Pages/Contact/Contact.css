@@ -1,8 +1,6 @@
 *{
     margin: 0%;
     padding: 0%;
-    /* box-sizing: border-box;
-    overflow-x: hidden; */
 }
 .contact-main-container{
     margin-top: 95px;
@@ -27,7 +25,6 @@
 }
 .contact-box{
     height: 200px;
-    /* background: transparent linear-gradient(143deg,#e2f8ff,#e2f8ff) 0 0 no-repeat padding-box; */
     box-shadow: 0px 15px 31px -3px rgba(0,0,0,0.1);
     border: 1px solid #4169e1;
     border-radius: 5px;
@@ -48,7 +45,6 @@ color: #0b0757;
 .input-box{
     border: 1px solid  #0b0757;
     outline: none;
-    /* width: 100% !important; */
     overflow-x:hidden !important;
 }
 .input-box:focus{

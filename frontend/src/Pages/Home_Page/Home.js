@@ -57,8 +57,8 @@ const data = [
 ];
 
 function Home() {
-  const [index, setIndex] = useState(0);
-  const { id, title, txt, tt, img } = data[index];
+  const [index] = useState(0);
+  const { id, title, txt, tt } = data[index];
 
   // const checkNumber = (number) => {
   //   if (number > data.length - 1) return 0;

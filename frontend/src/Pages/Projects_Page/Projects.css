@@ -17,11 +17,6 @@
     bottom: -10px;
     z-index: -1; 
 }
-/* .products-sub-text{
-    font-size: 20px !important;
-    font-weight: bold;
-    color: #0b0757;
-} */
 .active-tab{
     background-color: blue;
     color: white;

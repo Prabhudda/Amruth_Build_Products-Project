@@ -1,5 +1,4 @@
 import React from 'react';
-// import av from '..//..//assets/av.jpg';
 import company1 from '..//..//assets/company-1.jpg';
 import company2 from '..//..//assets/company-2.jpg';
 

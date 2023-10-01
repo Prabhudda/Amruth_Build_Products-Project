@@ -8,7 +8,11 @@ import '../Navbar/Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavbarContainer = styled.section``;
-const NavbarHeader = styled.div``;
+const NavbarHeader = styled.div`
+  @media (max-width: 550px) {
+    justify-content: space-around !important;
+  }
+`;
 const Nav = styled.nav``;
 const NavUl = styled.ul`
   padding-left: 0px;
@@ -69,25 +73,30 @@ function Navbar() {
       <NavbarContainer
         className={`${
           scroll ? 'after-scroll' : 'before-scroll'
-        } navbar fixed-top navbar-expand-lg navbar-container`}
+        } navbar fixed-top navbar-expand-lg navbar-container `}
       >
         <NavbarHeader className='container-fluid d-flex justify-content-between align-items-center mx-md-4 px-0'>
-          <Link
-            className='d-flex justify-content-center align-items-center '
-            to='/'
-            style={{ textDecoration: 'none' }}
-          >
-            <img
-              src={Logo}
-              className='mx-sm-2 mx-1 logo'
-              alt='logo'
-              loading='lazy'
-            />
+          <div className='d-flex justify-content-between align-items-center'>
+            <div>
+              <Link
+                className='navbar-left  '
+                to='/'
+                style={{ textDecoration: 'none' }}
+              >
+                <img
+                  src={Logo}
+                  className='mx-sm-2 mx-1 logo'
+                  alt='logo'
+                  loading='lazy'
+                />
+              </Link>
+            </div>
             <span className='company-text px-sm-2 px-0  '>
               Amruth Build Products
             </span>
-          </Link>
-          <Nav className='px-sm-2 px-1'>
+          </div>
+
+          <Nav className='px-sm-3 px-1'>
             <div className='text-center '>
               <NavUl
                 className='navUl m-0 d-flex justify-content-center align-items-center'

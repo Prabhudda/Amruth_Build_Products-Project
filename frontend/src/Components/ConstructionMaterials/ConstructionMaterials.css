@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 .ConstructionMaterials-main-container{
-    /* background-color: #f2f2f2; */
     border-radius: 5px;
     background: transparent linear-gradient(153deg,#fffffd,#fff9dd) 0 0 no-repeat padding-box;
     box-shadow: 0px 15px 31px -3px rgba(0,0,0,0.1);
@@ -27,11 +26,9 @@
 }
 .ConstructionMaterials-img-container{
     background-color: #fff;
-    /* background: transparent linear-gradient(153deg,#fffffd,#fff9dd) 0 0 no-repeat padding-box; */
     border-radius: 5px;
 }
 .ConstructionMaterials-img-box{
-    /* border: 1px solid #0b0757; */
     border-radius: 5px;
 }
 .ConstructionMaterials-img-box:hover .img-fluid{
@@ -44,5 +41,16 @@
         font-size: 27px;
         position: relative;
         color: #0b0757;
+    }
+    .ConstructionMaterials-main-text::before{
+        width: 160px; 
+        height: 5px;
+    }
+}
+
+@media (max-width:325px) {
+    .ConstructionMaterials-main-text::before{
+        width: 80px;
+        height: 5px;
     }
 }

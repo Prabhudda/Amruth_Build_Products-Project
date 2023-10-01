@@ -6,15 +6,17 @@
 }
 .footer-text{
     text-align: center;
-    /* font-weight: 600; */
     opacity: 1 !important;
     font-size: 14px;
     letter-spacing: 2px;
 }
-/* .footer-text:hover{
-    opacity: 100% !important;
-    cursor: pointer;
-} */
+.footer-main-link{
+    text-decoration: none;
+    color: #0b0757;
+}
+.footer-main-link:hover{
+    color:blue;
+}
 .footer-link{
     color:black;
     transition: all 0.2s;
@@ -33,16 +35,13 @@
     font-size: 25px !important;
 }
 .footer-title{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: #0b0757;
 }
 .social-media-icons:hover{
     transform: scale(1.2);
 }
-/* .Footer-ScrollToTop{
-    text-decoration: none;
-} */
 @media (max-width:450px) {
     .footer-text{
         font-size: 13px;

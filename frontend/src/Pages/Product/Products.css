@@ -54,7 +54,8 @@
     }
     .products-main-title{
         text-align: center;
-        font-size: 22px;
+        font-weight: bold;
+        font-size: 25px;
         padding: 0px 15px;
     }
     .products-sub-text{
@@ -84,7 +85,8 @@
     }
     .products-main-title{
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: bold;
         padding: 0px 15px;
     }
     .products-main-box{
