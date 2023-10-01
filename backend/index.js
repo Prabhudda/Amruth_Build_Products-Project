@@ -3,7 +3,10 @@ const app = express();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const PORT = process.env.PORT || 5001;
+const fs = require('fs');
 require('dotenv').config();
+
+const formSubmission = fs.readFileSync('mailFile.html', 'utf-8');
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -30,65 +33,7 @@ app.post('/contact', (req, res) => {
     from: process.env.ADMIN_EMAIL, // Use the email provided in the form
     to: process.env.ADMIN_EMAIL, // Replace with your email
     subject: 'Amruth Build Products Form Submission Mail',
-    html: `
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Form Submission</title>
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-          }
-          .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-          }
-          table {
-            width: 100%;
-            border-collapse: collapse;
-          }
-          th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-          }
-          th {
-            background-color: #f2f2f2;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <h2>Form Submission Details</h2>
-          <table>
-            <tr>
-              <th>Name:</th>
-              <td>${name}</td>
-            </tr>
-            <tr>
-              <th>Email:</th>
-              <td>${email}</td>
-            </tr>
-            <tr>
-              <th>Contact:</th>
-              <td>${number}</td>
-            </tr>
-            <tr>
-              <th>Message:</th>
-              <td style="word-break: break-all;">${message}</td>
-            </tr>
-          </table>
-        </div>
-      </body>
-      </html>
-    `,
+    html: `${formSubmission}`,
   };
 
   // const mailOptions = {
