@@ -25,12 +25,31 @@ function App() {
         <Whatsapp />
         <ScrollToTop />
         <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route
+            path='https://www.amruthbuildproducts.com/'
+            exact
+            element={<Home />}
+          />
+          <Route
+            path='https://www.amruthbuildproducts.com/about'
+            element={<About />}
+          />
+          <Route
+            path='https://www.amruthbuildproducts.com/products'
+            element={<Products />}
+          />
+          <Route
+            path='https://www.amruthbuildproducts.com/projects'
+            element={<Projects />}
+          />
+          <Route
+            path='https://www.amruthbuildproducts.com/services'
+            element={<Services />}
+          />
+          <Route
+            path='https://www.amruthbuildproducts.com/contact'
+            element={<Contact />}
+          />
           {/*<Route path='/team' element={<Team />} /> */}
         </Routes>
         <Footer />
