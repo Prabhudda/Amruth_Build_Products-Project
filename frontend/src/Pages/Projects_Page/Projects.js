@@ -91,7 +91,9 @@ const Projects = () => {
     <div className='container-fluid p-0 project-main-container'>
       <div className='position-relative serivesBgImg '>
         <div className='service-img-overlay d-flex justify-content-center align-items-center'>
-          <h1 className='text-light text-center '>Our Projects</h1>
+          <h1 className='text-light text-center products-main-title'>
+            Our Projects
+          </h1>
         </div>
       </div>
       <div className='container d-flex justify-content-center align-items-center'></div>

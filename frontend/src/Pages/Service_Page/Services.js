@@ -28,7 +28,7 @@ function Services() {
     <div className='service-main-box container-fluid p-0  bg-light'>
       <div className='position-relative serivesBgImg '>
         <div className='service-img-overlay d-flex justify-content-center align-items-center'>
-          <h1 className='text-light'>Our Services</h1>
+          <h1 className='text-light products-main-title'>Our Services</h1>
         </div>
       </div>
       <div className='container mt-sm-5 mt-0 '>
