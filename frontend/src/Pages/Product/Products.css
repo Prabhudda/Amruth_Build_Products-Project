@@ -1,6 +1,5 @@
 .products-main-box{
     margin-top: 95px;
-
 }
 .products-main-text{
     font-size: 40px;
@@ -72,6 +71,9 @@
         color: #0b0757;
         font-size: 18px;
     }
+    .products-main-box{
+        margin-top: 75px;
+    }
     .products-main-text::before{
         width: 160px; 
         height: 5px;
@@ -90,7 +92,7 @@
         padding: 0px 15px;
     }
     .products-main-box{
-        margin-top: 70px;
+        margin-top: 40px;
     }
     .products-sub-text{
         font-size: 20px;
