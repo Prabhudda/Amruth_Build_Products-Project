@@ -1,7 +1,19 @@
 import React from 'react';
 import company1 from '..//..//assets/company-1.jpg';
 import company2 from '..//..//assets/company-2.jpg';
-import abp from '..//..//assets/ABP_img.jpeg';
+// import abp from '..//..//assets/ABP_img.jpeg';
+// <div className='container mt-4'>
+//   <div className='row d-flex justify-content-around align-items-center'>
+//     <div className='col-lg-6 col-11'>
+//       <img
+//         loading='lazy'
+//         className='img-fluid company-img-box'
+//         src={abp}
+//         alt='company-img'
+//       />
+//     </div>
+//   </div>
+// </div>
 
 import '../About/About.css';
 import { FaHandsHelping } from 'react-icons/fa';
@@ -59,6 +71,7 @@ function About() {
               alt='company-img'
             />
           </div>
+          <h1>ABP</h1>
         </div>
       </div>
 
