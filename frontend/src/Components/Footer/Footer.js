@@ -57,7 +57,7 @@ function Footer() {
 
               <div className='mx-2'>
                 <Link
-                  to='https://www.instagram.com/amruth_organic_fertilizers/'
+                  to='https://www.instagram.com/amruth_build_product/'
                   target='_blank'
                   title='Instagram'
                 >

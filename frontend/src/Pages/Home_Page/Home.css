@@ -167,14 +167,7 @@
   .container-box:hover > .container-icons{
     color: rgb(80, 99, 245);
   }
-  @keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-  }
+
   .logos{
     overflow: hidden;
     padding: 60px 0px;
@@ -183,6 +176,14 @@
   .logos-slide{
     display: inline-block;
     animation: 25s slide infinite linear;
+  }
+  @keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
   }
   .logos-slide img{
         height: 50px;
@@ -193,16 +194,6 @@
     transform: scale(2);
     width: 200px !important;
 }
-
-
-    @keyframes scroll {
-        0%{
-            transform: translateX(0%)
-        }
-        100%{
-            transform: translateX(calc(-250px*2));
-        }
-    }
     .service-container{
         position: relative;
         height: auto;
