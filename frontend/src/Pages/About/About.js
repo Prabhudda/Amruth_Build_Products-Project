@@ -61,18 +61,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='container mt-4'>
-        <div className='row d-flex justify-content-around align-items-center'>
-          <div className='col-lg-6 col-11'>
-            <img
-              loading='lazy'
-              className='img-fluid company-img-box'
-              src={abp}
-              alt='company-img'
-            />
-          </div>
-        </div>
-      </div>
+
       <div className='position-relative our-values-container container p-0 text-center'>
         <h3 className='about-main-text text-center px-1'>Framing Our Values</h3>
         <div className='row p-3 d-md-flex flex-md-row flex-row-reverse justify-content-around align-items-center mt-5'>
