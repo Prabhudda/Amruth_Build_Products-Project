@@ -87,7 +87,7 @@ function Footer() {
           <div className='col-lg-2 col-12 mt-5'>
             <h5 className='footer-title '>Quick Links</h5>
             <hr></hr>
-            <div>
+            <div className='footer-border-left-links'>
               <div>
                 <Link
                   className={
@@ -169,7 +169,7 @@ function Footer() {
               </Link>
             </h5>
             <hr></hr>
-            <div>
+            <div className='footer-border-left-links'>
               <div>Planning</div>
               <div>Designing</div>
               <div>Estimation and Costing</div>
@@ -184,7 +184,7 @@ function Footer() {
               </Link>
             </h5>
             <hr></hr>
-            <div>
+            <div className='footer-border-left-links'>
               <div>Solid Blocks</div>
               <div>Paver Blocks</div>
               <div>Kerb Stones</div>
@@ -196,7 +196,7 @@ function Footer() {
               </Link>
             </h5>
             <hr></hr>
-            <div>
+            <div className='footer-border-left-links'>
               <div>Cement</div>
               <div>TMT Steel</div>
               <div>M Sand</div>
@@ -205,14 +205,14 @@ function Footer() {
               <div>P Sand</div>
             </div>
           </div>
-          <div className='col-lg-2 col-12 mt-5'>
+          <div className='col-lg-2 col-12 mt-5 '>
             <h5 className='footer-title'>
               <Link to='/contact' className='footer-main-link'>
                 Reach Us At
               </Link>
             </h5>
             <hr></hr>
-            <div className='d-sm-flex flex-column justify-content-center mt-sm-0 mt-4'>
+            <div className='d-sm-flex flex-column justify-content-center mt-sm-0 mt-4 footer-border-left-links'>
               <div className='mt-2'>
                 <FaMapMarkerAlt className='reach-us-icons' />
                 <p className='mx-sm-0 fs-6  mt-3 ' style={{ opacity: '1' }}>
@@ -263,8 +263,8 @@ function Footer() {
 
       <hr></hr>
       <div>
-        <div className='' style={{ fontFamily: 'times-roman' }}>
-          <p className='footer-text'>
+        <div className=''>
+          <p className='footer-text m-0'>
             &copy; 2023 AMRUTH BUILD PRODUCTS, ALL RIGHTS RESERVED
           </p>
         </div>
