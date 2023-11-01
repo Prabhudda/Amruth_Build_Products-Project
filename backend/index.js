@@ -44,7 +44,7 @@ app.post('/contact', (req, res) => {
     html: `
     <html>
     <body>
-      <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; margin: 20px;">
+      <div style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 10px; margin: 10px;">
       ${formSubmission}
         <table style="width: 100%; border-collapse: collapse;">
           <tr>
