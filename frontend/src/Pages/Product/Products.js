@@ -47,8 +47,10 @@ function Products() {
           </div>
           <div
             className='my-md-5 my-1 px-4'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <div className='pb-5'>
               <div>
@@ -118,8 +120,10 @@ function Products() {
           </div>
           <div
             className=' my-md-5 my-5 px-4'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <div>
               <div>
@@ -187,8 +191,10 @@ function Products() {
           </div>
           <div
             className='my-md-5 my-2 px-4'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <div>
               <div>
@@ -253,8 +259,10 @@ function Products() {
           </div>
           <div
             className='my-5 my-md-5 px-4'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <div>
               <div>
@@ -336,8 +344,10 @@ function Products() {
             </div>
             <div
               className='my-2 my-md-5 px-sm-4 px-4'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // {
+              //   data-aos='fade-up'
+              //   data-aos-duration='1000'
+              // }
             >
               <div>
                 <h3 className='products-advantage-title'>
@@ -401,8 +411,10 @@ function Products() {
             </div>
             <div
               className='my-4 my-sm-5 px-4'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // {
+              //   data-aos='fade-up'
+              //   data-aos-duration='1000'
+              // }
             >
               <div>
                 <h3 className='products-advantage-title'>
@@ -493,8 +505,10 @@ function Products() {
             <div className=''>
               <div
                 className='my-5 my-md-5 px-2'
-                data-aos='fade-up'
-                data-aos-duration='1000'
+                // {
+                //   data-aos='fade-up'
+                //   data-aos-duration='1000'
+                // }
               >
                 <div>
                   <h3 className='products-advantage-title mt-3'>
@@ -587,8 +601,10 @@ function Products() {
             </div>
             <div
               className='my-5 my-md-5 px-4'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // {
+              //   data-aos='fade-up'
+              //   data-aos-duration='1000'
+              // }
             >
               <div>
                 <h3 className='products-advantage-title'>

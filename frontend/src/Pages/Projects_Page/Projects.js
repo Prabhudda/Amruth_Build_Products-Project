@@ -63,10 +63,8 @@ const Projects = () => {
             <div className='container mt-5 '>
               <h2
                 className='projects-main-text'
-                // {
-                //   data-aos='fade-up'
-                //   data-aos-duration='1000'
-                // }
+                data-aos='fade-up'
+                data-aos-duration='1000'
               >
                 Completed Projects
               </h2>
@@ -75,10 +73,8 @@ const Projects = () => {
                   <div className='my-sm-0 my-2' key={project.id}>
                     <div
                       className='p-sm-0 p-3'
-                      // {
-                      //   data-aos='fade-up'
-                      //   data-aos-duration='1000'
-                      // }
+                      data-aos='fade-up'
+                      data-aos-duration='1000'
                     >
                       <h4 className='mt-sm-5 mt-3 projects-sub-text'>
                         {project.title}
@@ -95,10 +91,8 @@ const Projects = () => {
                     <div className='row p-sm-0 p-3 d-flex justify-content-center align-items-center'>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        // {
-                        //   data-aos='fade-up'
-                        //   data-aos-duration='1000'
-                        // }
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
                       >
                         <img
                           className='grayimg'
@@ -110,10 +104,8 @@ const Projects = () => {
                       </div>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        // {
-                        //   data-aos='fade-up'
-                        //   data-aos-duration='1000'
-                        // }
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
                       >
                         <img
                           className='grayimg'
@@ -125,10 +117,8 @@ const Projects = () => {
                       </div>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        // {
-                        //   data-aos='fade-up'
-                        //   data-aos-duration='1000'
-                        // }
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
                       >
                         <img
                           className='grayimg'
@@ -140,10 +130,8 @@ const Projects = () => {
                       </div>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        // {
-                        //   data-aos='fade-up'
-                        //   data-aos-duration='1000'
-                        // }
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
                       >
                         <img
                           className='grayimg'
