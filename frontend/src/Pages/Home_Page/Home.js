@@ -59,27 +59,6 @@ const data = [
 function Home() {
   const [index] = useState(0);
   const { id, title, txt, tt } = data[index];
-
-  // const checkNumber = (number) => {
-  //   if (number > data.length - 1) return 0;
-  //   if (number < 0) return data.length - 1;
-  //   return number;
-  // };
-
-  // const prevBtn = () => {
-  //   setIndex((index) => {
-  //     let newIndex = index - 1;
-  //     return checkNumber(newIndex);
-  //   });
-  // };
-
-  // const nextBtn = () => {
-  //   setIndex((index) => {
-  //     let newIndex = index + 1;
-  //     return checkNumber(newIndex);
-  //   });
-  // };
-
   return (
     <div
       className='home-head-component position-relative container-fluid px-0  my-4'
@@ -98,42 +77,7 @@ function Home() {
             </Link>
           </div>
         </div>
-        {/*<div class='btn-container'>
-          <button className='prev-btn' onClick={prevBtn}>
-            <FaChevronLeft />
-          </button>
-          <button className='next-btn' onClick={nextBtn}>
-            <FaChevronRight />
-          </button>
-        </div> */}
       </div>
-      {/* 
-      <div
-        className='container-fluid vh-100 d-flex justify-content-left align-items-center position-relative'
-        style={{ backgroundColor: '#D2E0FB' }}
-      >
-        <div className='container d-md-flex justify-content-between align-items-center'>
-          <div className='col-md-8 col-10'>
-            <div className='container ' key={id}>
-              <h1 className='fs-6'>{title}</h1>
-              <h2 className=' mt-3 d-md-block d-none'>{txt}</h2>
-              <h5 className='mt-3 d-lg-block d-none'>{tt}</h5>
-            </div>
-            <div className='mt-5  container'>
-              <Link
-                className='explore-link btn btn-outline-primary'
-                to='/about'
-              >
-                Explore More
-              </Link>
-            </div>
-          </div>
-          <div className='col-md-8 col-10'>
-            <img className='img-fluid' src={sw} width={500} height={500}></img>
-          </div>
-        </div>
-      </div>
-      */}
       <div className='container my-5'>
         <div className=''>
           <h3 className='text-center main-text'>
@@ -143,8 +87,8 @@ function Home() {
       </div>
       <div
         className='container-fluid p-0 text-center '
-        data-aos='fade-up'
-        data-aos-duration='1000'
+        // data-aos='fade-up'
+        // data-aos-duration='1000'
       >
         <div className=' row p-3 d-flex justify-content-around align-items-center'>
           <div className='container-box col-lg-3 col-md-5 col-12 p-3 mt-md-0'>
@@ -177,8 +121,8 @@ function Home() {
       <div className='container-fluid trusted-text-container p-0'>
         <div
           className='pt-5 px-sm-0 px-3'
-          data-aos='fade-up'
-          data-aos-duration='1100'
+          // data-aos='fade-up'
+          // data-aos-duration='1100'
         >
           <h3 className='main-text text-center'>
             Trusted by well known companies
@@ -253,8 +197,8 @@ function Home() {
             </div>
             <div
               className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2'
-              data-aos='fade-up'
-              data-aos-duration='1100'
+              // data-aos='fade-up'
+              // data-aos-duration='1100'
             >
               <h3 className='service-main-text'>Planning and Designing</h3>
               <p>
@@ -273,8 +217,8 @@ function Home() {
           >
             <div
               className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2 order-lg-0 order-1'
-              data-aos='fade-up'
-              data-aos-duration='1200'
+              // data-aos='fade-up'
+              // data-aos-duration='1200'
             >
               <h3 className='service-main-text'>Estimation and Costing</h3>
               <p>
@@ -309,8 +253,8 @@ function Home() {
             </div>
             <div
               className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2'
-              data-aos='fade-up'
-              data-aos-duration='1200'
+              // data-aos='fade-up'
+              // data-aos-duration='1200'
             >
               <h3 className='service-main-text'>Turnkey Projects</h3>
               <p>
@@ -328,15 +272,15 @@ function Home() {
       </div>
       <div
         className='my-5 p-0 px-2 container'
-        data-aos='fade-up'
-        data-aos-duration='1200'
+        // data-aos='fade-up'
+        // data-aos-duration='1200'
       >
         <ManufacturingMaterials />
       </div>
       <div
         className='my-5 p-0 px-2 container'
-        data-aos='fade-up'
-        data-aos-duration='1200'
+        // data-aos='fade-up'
+        // data-aos-duration='1200'
       >
         <ConstructionMaterials />
       </div>
