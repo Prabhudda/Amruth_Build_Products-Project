@@ -79,8 +79,8 @@ function About() {
         <div className='row p-3 d-md-flex flex-md-row flex-row-reverse justify-content-around align-items-center mt-5'>
           <div
             className='col-lg-5 col-md-12 col-11 p-4 mt-md-0 mt-3  about-shadow'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <AiOutlineEye size={50} />
             <h2 className='content-sub-text fs-3 fw-bold mt-1'>Vision</h2>
@@ -92,8 +92,10 @@ function About() {
           </div>
           <div
             className='col-lg-5 col-md-12 col-11 mt-lg-0 mt-5 p-4 about-shadow'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <TbTargetArrow size={50} />
             <h2 className='content-sub-text fs-3 fw-bold mt-1'>Mission</h2>
@@ -105,8 +107,10 @@ function About() {
           </div>
           <div
             className='col-lg-5 col-md-12 col-11 mt-5  p-4 about-shadow'
-            data-aos='fade-up'
-            data-aos-duration='1200'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1200'
+            // }
           >
             <FaHandsHelping size={50} />
             <h2 className='content-sub-text fs-5 fw-bold mt-1'>
@@ -124,8 +128,8 @@ function About() {
         <div className='row d-flex justify-content-between align-items-center'>
           <div
             className='col-lg-5 col-12'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <h3 className='about-main-text'>Who We Are</h3>
             <p className='mt-5 px-sm-0 px-3 paragraphs'>
@@ -137,8 +141,8 @@ function About() {
           </div>
           <div
             className='col-lg-5 col-12 mt-lg-0 mt-5'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <h3 className='about-main-text'>What Sets Us Apart</h3>
             <p className='mt-5 px-sm-0 px-3  paragraphs'>
@@ -153,8 +157,8 @@ function About() {
         <div className='row col-12 d-flex justify-content-center align-items-center'>
           <div
             className='col-lg-9 col-12'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <h3 className='text-center about-main-text'>What We Do</h3>
             <p className='mt-5 px-sm-0 px-3  paragraphs'>
@@ -165,8 +169,8 @@ function About() {
         </div>
         <div
           className='position-relative container mt-5'
-          data-aos='fade-up'
-          data-aos-duration='1000'
+          // data-aos='fade-up'
+          // data-aos-duration='1000'
         >
           <div className='position-relative row d-flex justify-content-center align-items-center'>
             <div className='col-lg-5 col-12'>
@@ -244,8 +248,8 @@ function About() {
           <div className='row row-data d-flex justify-content-around align-items-center'>
             <div
               className='col-md-3 col-12 choose-us-box'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <div className='px-2 py-3'>
                 <div className='number'>01</div>
@@ -254,8 +258,8 @@ function About() {
             </div>
             <div
               className='col-md-3 col-12 choose-us-box my-md-0 my-4'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <div className='px-2 py-3'>
                 <div className='number'>02</div>
@@ -264,8 +268,8 @@ function About() {
             </div>
             <div
               className='col-md-3 col-12 choose-us-box'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <div className='px-2 py-3'>
                 <div className='number'>03</div>
@@ -276,8 +280,8 @@ function About() {
           <div className='row row-data d-flex justify-content-around align-items-center my-md-5 mt-4'>
             <div
               className='col-md-3 col-12  choose-us-box'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <div className='px-2 py-3'>
                 <div className='number'>04</div>
@@ -286,8 +290,8 @@ function About() {
             </div>
             <div
               className='col-md-3 col-12  choose-us-box my-md-0 my-4'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <div className='px-2 py-3'>
                 <div className='number'>05</div>
@@ -296,8 +300,8 @@ function About() {
             </div>
             <div
               className='col-md-3 col-12  choose-us-box'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <div className='px-2 py-3'>
                 <div className='number'>06</div>
