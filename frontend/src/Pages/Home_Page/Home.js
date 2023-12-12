@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../Home_Page/Home.css';
 import { FaLeaf, FaTrophy, FaLightbulb } from 'react-icons/fa';
 import { RxArrowTopRight } from 'react-icons/rx';
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import img1 from '..//..//assets/Service-home-1.jpeg';
 import img2 from '..//..//assets/3.jpeg';
@@ -15,8 +14,6 @@ import TMT from '..//..//assets/turbo-steel.jpg';
 import ts from '..//..//assets/ts-new.png';
 import ManufacturingMaterials from '..//..//Components/Manufacturing/Manufacturing';
 import ConstructionMaterials from '..//..//Components/ConstructionMaterials/ConstructionMaterials';
-// import qw from '..//..//assets/qw.png';
-// import sw from '..//..//assets/sw.png';
 
 const data = [
   {
@@ -87,8 +84,8 @@ function Home() {
       </div>
       <div
         className='container-fluid p-0 text-center '
-        // data-aos='fade-up'
-        // data-aos-duration='1000'
+        data-aos='fade-up'
+        data-aos-duration='1000'
       >
         <div className=' row p-3 d-flex justify-content-around align-items-center'>
           <div className='container-box col-lg-3 col-md-5 col-12 p-3 mt-md-0'>
@@ -121,8 +118,8 @@ function Home() {
       <div className='container-fluid trusted-text-container p-0'>
         <div
           className='pt-5 px-sm-0 px-3'
-          // data-aos='fade-up'
-          // data-aos-duration='1100'
+          data-aos='fade-up'
+          data-aos-duration='1100'
         >
           <h3 className='main-text text-center'>
             Trusted by well known companies
@@ -197,8 +194,8 @@ function Home() {
             </div>
             <div
               className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2'
-              // data-aos='fade-up'
-              // data-aos-duration='1100'
+              data-aos='fade-up'
+              data-aos-duration='1100'
             >
               <h3 className='service-main-text'>Planning and Designing</h3>
               <p>
@@ -217,8 +214,8 @@ function Home() {
           >
             <div
               className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2 order-lg-0 order-1'
-              // data-aos='fade-up'
-              // data-aos-duration='1200'
+              data-aos='fade-up'
+              data-aos-duration='1200'
             >
               <h3 className='service-main-text'>Estimation and Costing</h3>
               <p>
@@ -253,8 +250,8 @@ function Home() {
             </div>
             <div
               className='col-lg-6 col-11 mt-md-0 mt-3 p-lg-5 py-4 px-2'
-              // data-aos='fade-up'
-              // data-aos-duration='1200'
+              data-aos='fade-up'
+              data-aos-duration='1200'
             >
               <h3 className='service-main-text'>Turnkey Projects</h3>
               <p>
@@ -272,15 +269,15 @@ function Home() {
       </div>
       <div
         className='my-5 p-0 px-2 container'
-        // data-aos='fade-up'
-        // data-aos-duration='1200'
+        data-aos='fade-up'
+        data-aos-duration='1200'
       >
         <ManufacturingMaterials />
       </div>
       <div
         className='my-5 p-0 px-2 container'
-        // data-aos='fade-up'
-        // data-aos-duration='1200'
+        data-aos='fade-up'
+        data-aos-duration='1200'
       >
         <ConstructionMaterials />
       </div>

@@ -91,7 +91,7 @@ function Navbar() {
                 />
               </Link>
             </div>
-            <span className='company-text px-sm-2 px-0  '>
+            <span className='company-text fw-normal px-sm-2 px-0'>
               Amruth Build Products
             </span>
           </div>

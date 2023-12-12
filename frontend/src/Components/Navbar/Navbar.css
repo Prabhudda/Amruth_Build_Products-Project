@@ -2,6 +2,7 @@
 
 .after-scroll{
     background: transparent linear-gradient(143deg,#e2f8ff,#e2f8ff) 0 0 no-repeat padding-box;
+    
 }
 .before-scroll{
     background-color:white;
@@ -34,11 +35,13 @@
     font-weight: 900;
     opacity: 100%;
     font-family: 'Poppins', sans-serif;
+    /* font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    /* font-family: 'Times New Roman', Times, serif; */
 }
-.company-text:hover{
+/* .company-text:hover{
     color: #0b0757;
     opacity: 80%;
-}
+} */
 .contact-btn:hover{
     background-color:#fff;
     color: #014AA8;
