@@ -39,28 +39,22 @@ function Services() {
           <div className='row text-center d-flex justify-content-around align-items-center'>
             <div
               className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'
-              // {
-              //   data-aos='fade-up'
-              //   data-aos-duration='1000'
-              // }
+              data-aos='fade-up'
+              data-aos-duration='1000'
             >
               <h4>Planning & Designing</h4>
             </div>
             <div
               className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'
-              // {
-              //   data-aos='fade-up'
-              //   data-aos-duration='1100'
-              // }
+              data-aos='fade-up'
+              data-aos-duration='1100'
             >
               <h4>Estimation and Costing</h4>
             </div>
             <div
               className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'
-              // {
-              //   data-aos='fade-up'
-              //   data-aos-duration='1300'
-              // }
+              data-aos='fade-up'
+              data-aos-duration='1300'
             >
               <h4>Turn Key Projects</h4>
             </div>
@@ -68,19 +62,15 @@ function Services() {
           <div className='row text-center d-flex justify-content-around align-items-center '>
             <div
               className='col-md-5 col-12 py-5 mt-md-0 mt-3 bg-dark text-light'
-              // {
-              //   data-aos='fade-up'
-              //   data-aos-duration='1800'
-              // }
+              data-aos='fade-up'
+              data-aos-duration='1800'
             >
               <h4>Manufacturing Materials</h4>
             </div>
             <div
               className='col-md-5 col-12 py-5 mt-md-0 mt-3 bg-dark text-light'
-              // {
-              //   data-aos='fade-up'
-              //   data-aos-duration='1800'
-              // }
+              data-aos='fade-up'
+              data-aos-duration='1800'
               id='planning-designing'
             >
               <h4>Construction Materials</h4>
@@ -97,10 +87,8 @@ function Services() {
             >
               <div
                 className='col-md-5 col-12'
-                // {
-                //   data-aos='fade-up'
-                //   data-aos-duration='1000'
-                // }
+                data-aos='fade-up'
+                data-aos-duration='1000'
               >
                 <h2 className='service-main-text'>Planing & Designing</h2>
                 <p className=''>
@@ -125,10 +113,8 @@ function Services() {
                 </h4>
                 <div
                   className='col-md-5 col-12  mt-md-5 mt-4'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div className='text-center'>
                     <TbBulb size={50} />
@@ -146,10 +132,7 @@ function Services() {
                 </div>
                 <div
                   className='col-md-5 col-12 mt-md-5 mt-4'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }data-aos='fade-up'
+                  data-aos='fade-up'
                   data-aos-duration='1000'
                 >
                   <div className='text-center'>
@@ -168,10 +151,8 @@ function Services() {
                 </div>
                 <div
                   className='col-md-5 col-12 mt-md-5 mt-4'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div className='text-center'>
                     <IoIosTime size={50} />
@@ -189,10 +170,8 @@ function Services() {
 
                 <div
                   className='col-md-5 col-12 mt-md-5 mt-4'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div className='text-center'>
                     <AiOutlinePartition size={50} />
@@ -221,10 +200,8 @@ function Services() {
             >
               <div
                 className='col-md-5 col-12 p-2'
-                // {
-                //   data-aos='fade-up'
-                //   data-aos-duration='1000'
-                // }
+                data-aos='fade-up'
+                data-aos-duration='1000'
               >
                 <h2 className='service-main-text'>Estimation and Costing</h2>
                 <p className=''>
@@ -246,10 +223,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -271,10 +246,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box my-md-0 my-3'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -295,10 +268,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box mt-3'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -319,10 +290,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box mt-3'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -352,10 +321,8 @@ function Services() {
             >
               <div
                 className='col-md-5 col-12'
-                // {
-                //   data-aos='fade-up'
-                //   data-aos-duration='1000'
-                // }
+                data-aos='fade-up'
+                data-aos-duration='1000'
               >
                 <h2 className='service-main-text'>Turnkey Projects</h2>
                 <p>
@@ -377,10 +344,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -398,10 +363,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box my-md-0 my-3'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -422,10 +385,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box mt-3'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -443,10 +404,8 @@ function Services() {
               <div className='col-md-6 col-12 estimation-costing-box mt-3'>
                 <div
                   className='d-flex p-sm-3'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <div>
                     <FaArrowRight />
@@ -471,10 +430,8 @@ function Services() {
             >
               <div
                 className='col-md-4 col-12 py-sm-0 py-5'
-                // {
-                //   data-aos='fade-up'
-                //   data-aos-duration='1000'
-                // }
+                data-aos='fade-up'
+                data-aos-duration='1000'
               >
                 <h2 className='service-main-text '>Manufacturing Materials</h2>
                 <p>
@@ -552,10 +509,8 @@ function Services() {
               <div>
                 <div
                   className='col-12 py-sm-0 py-5'
-                  // {
-                  //   data-aos='fade-up'
-                  //   data-aos-duration='1000'
-                  // }
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
                 >
                   <h2 className='service-main-text'>Construction Materials</h2>
                   <p>

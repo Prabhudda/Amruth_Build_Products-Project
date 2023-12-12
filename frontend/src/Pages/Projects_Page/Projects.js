@@ -10,15 +10,6 @@ import wareHouse3 from '..//..//assets/warehouse3.jpg';
 import wareHouse4 from '..//..//assets/warehouse4.jpg';
 import '../Projects_Page/Projects.css';
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: 'Project A',
-  //   status: 'ongoing',
-  //   description:
-  //     'This is an ongoing project focused on developing a new mobile app.',
-  //   startDate: '2023-01-15',
-  //   endDate: null,
-  // },
   {
     id: 1,
     title: 'Asphalt Road Project :',
@@ -49,44 +40,13 @@ const projectsData = [
     img3: `${wareHouse3}`,
     img4: `${wareHouse4}`,
   },
-
-  // ... more project data
 ];
 
 const Projects = () => {
   const [activeTab] = useState('ongoing');
-
-  // const ongoingProjects = projectsData.filter(
-  //   (project) => project.status === 'ongoing'
-  // );
   const completedProjects = projectsData.filter(
     (project) => project.status === 'completed'
   );
-
-  // const handleTabChange = (tab) => {
-  //   setActiveTab(tab);
-  // };
-
-  // <button
-  //         className={
-  //           activeTab === 'ongoing'
-  //             ? 'btn btn-primary py-3 px-3 '
-  //             : 'btn btn-outline-primary py-3 px-3'
-  //         }
-  //         onClick={() => handleTabChange('ongoing')}
-  //       >
-  //         Ongoing Projects
-  //       </button>
-  //       <button
-  //         className={
-  //           activeTab === 'completed'
-  //             ? 'btn btn-primary mx-3 py-3 px-3 '
-  //             : 'btn btn-outline-primary mx-3 py-3 px-3'
-  //         }
-  //         onClick={() => handleTabChange('completed')}
-  //       >
-  //         Completed Projects
-  //       </button>
   return (
     <div className='container-fluid p-0 project-main-container'>
       <div className='position-relative serivesBgImg '>
@@ -100,29 +60,13 @@ const Projects = () => {
       <div className='my-5 '>
         {activeTab === 'ongoing' && (
           <div className=''>
-            {/* 
-            <div
-              className='container'
-              data-aos='fade-up'
-              data-aos-duration='1000'
-            >
-              <h2 className='projects-main-text'>Ongoing Projects</h2>
-              <div className='mt-5'>
-                {ongoingProjects.map((project) => (
-                  <div key={project.id}>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    <p>Start Date: {project.startDate}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            */}
             <div className='container mt-5 '>
               <h2
                 className='projects-main-text'
-                data-aos='fade-up'
-                data-aos-duration='1000'
+                // {
+                //   data-aos='fade-up'
+                //   data-aos-duration='1000'
+                // }
               >
                 Completed Projects
               </h2>
@@ -131,8 +75,10 @@ const Projects = () => {
                   <div className='my-sm-0 my-2' key={project.id}>
                     <div
                       className='p-sm-0 p-3'
-                      data-aos='fade-up'
-                      data-aos-duration='1000'
+                      // {
+                      //   data-aos='fade-up'
+                      //   data-aos-duration='1000'
+                      // }
                     >
                       <h4 className='mt-sm-5 mt-3 projects-sub-text'>
                         {project.title}
@@ -149,8 +95,10 @@ const Projects = () => {
                     <div className='row p-sm-0 p-3 d-flex justify-content-center align-items-center'>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        data-aos='fade-up'
-                        data-aos-duration='1000'
+                        // {
+                        //   data-aos='fade-up'
+                        //   data-aos-duration='1000'
+                        // }
                       >
                         <img
                           className='grayimg'
@@ -162,8 +110,10 @@ const Projects = () => {
                       </div>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        data-aos='fade-up'
-                        data-aos-duration='1000'
+                        // {
+                        //   data-aos='fade-up'
+                        //   data-aos-duration='1000'
+                        // }
                       >
                         <img
                           className='grayimg'
@@ -175,8 +125,10 @@ const Projects = () => {
                       </div>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        data-aos='fade-up'
-                        data-aos-duration='1000'
+                        // {
+                        //   data-aos='fade-up'
+                        //   data-aos-duration='1000'
+                        // }
                       >
                         <img
                           className='grayimg'
@@ -188,8 +140,10 @@ const Projects = () => {
                       </div>
                       <div
                         className='col-md-4 col-12 mt-3'
-                        data-aos='fade-up'
-                        data-aos-duration='1000'
+                        // {
+                        //   data-aos='fade-up'
+                        //   data-aos-duration='1000'
+                        // }
                       >
                         <img
                           className='grayimg'
