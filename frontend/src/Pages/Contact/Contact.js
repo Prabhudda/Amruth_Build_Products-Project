@@ -128,8 +128,10 @@ function Contact() {
         <div className='row'>
           <div
             className='col-md-6 col-12'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <img
               loading='lazy'
@@ -142,8 +144,10 @@ function Contact() {
             onSubmit={handleSubmit}
             className='col-md-6 col-12'
             autoComplete='off'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1000'
+            // }
           >
             <div className=''>
               <label
@@ -239,8 +243,8 @@ function Contact() {
         <div className='row d-flex justify-content-around align-items-center px-md-0 px-5'>
           <div
             className='col-md-3 col-12 contact-box d-flex flex-column justify-content-center align-items-center'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // {data-aos='fade-up'
+            // data-aos-duration='1000'}
           >
             <div className='text-center'>
               <div>
@@ -265,8 +269,10 @@ function Contact() {
           </div>
           <div
             className='col-md-3 col-12 contact-box d-flex flex-column justify-content-center align-items-center mt-md-0 mt-4'
-            data-aos='fade-up'
-            data-aos-duration='1200'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1200'
+            // }
           >
             <div className='text-center mx-sm-3'>
               <div>
@@ -291,8 +297,10 @@ function Contact() {
           </div>
           <div
             className='col-md-3 col-12 contact-box d-flex flex-column justify-content-center align-items-center mt-md-0 mt-4'
-            data-aos='fade-up'
-            data-aos-duration='1300'
+            // {
+            //   data-aos='fade-up'
+            //   data-aos-duration='1300'
+            // }
           >
             <div className='text-center mx-sm-3'>
               <div>
@@ -308,8 +316,10 @@ function Contact() {
         </div>
         <div
           className='row d-flex justify-content-center align-items-center'
-          data-aos='fade-up'
-          data-aos-duration='1000'
+          // {
+          //   data-aos='fade-up'
+          //   data-aos-duration='1000'
+          // }
         >
           <div className='container-fluid mt-md-5 mt-3 col-12'>
             <div className='mt-lg-0 mt-5'>
