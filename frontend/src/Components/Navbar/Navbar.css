@@ -32,16 +32,13 @@
     color: #0b0757;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: bold;
     opacity: 100%;
     font-family: 'Poppins', sans-serif;
     /* font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
     /* font-family: 'Times New Roman', Times, serif; */
 }
-/* .company-text:hover{
-    color: #0b0757;
-    opacity: 80%;
-} */
+
 .contact-btn:hover{
     background-color:#fff;
     color: #014AA8;

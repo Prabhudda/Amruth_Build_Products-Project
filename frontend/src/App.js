@@ -11,8 +11,8 @@ import ScrollToTop from '../src/Components/ScrollToTop';
 import Footer from '../src/Components/Footer/Footer';
 import Whatsapp from './Components/Whatsapp/Whatsapp';
 import Projects from './Pages/Projects_Page/Projects';
-import 'aos/dist/aos.css'; // Import the AOS CSS
-import AOS from 'aos'; // Import the AOS library
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 AOS.init(); // Initialize AOS
 const MainContainer = styled.section``;

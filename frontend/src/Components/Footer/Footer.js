@@ -9,15 +9,12 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import { AiOutlineArrowUp } from 'react-icons/ai';
-// import { AiOutlineArrowUp } from 'react-icons/ai';
 import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import Logo from '../../assets/round.jpg';
 import '../Footer/Footer.css';
-// import ScrollToTop from '../ScrollToTop';
 
-// <FaBuilding size={0} />
 function Footer() {
   const location = useLocation();
   return (
@@ -255,7 +252,12 @@ function Footer() {
           </div>
         </div>
         <div className='text-center d-sm-flex justify-content-center align-items-center  d-none'>
-          <a className='Footer-ScrollToTop' href='/' title='scroll to top'>
+          <a
+            className='Footer-ScrollToTop'
+            onClick={() => window.scrollTo(0, 0)}
+            title='Scroll to top'
+            style={{ cursor: 'pointer' }}
+          >
             <AiOutlineArrowUp size={20} />
           </a>
         </div>

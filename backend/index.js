@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const path = require('path');
+// const path = require('path');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const PORT = process.env.PORT || 5001;
@@ -8,13 +8,12 @@ const fs = require('fs');
 require('dotenv').config();
 
 const formSubmission = fs.readFileSync('mailFile.html', 'utf-8');
-// Serve static files (e.g., CSS, JavaScript) from the 'public' folder
-app.use(express.static(path.join(__dirname, 'public')));
 
-// Handle all routes by serving the 'index.html' file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+// app.use(express.static(path.join(__dirname, 'public')));
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -27,9 +26,9 @@ const transporter = nodemailer.createTransport({
 
 app.use(express.json());
 app.use(cors());
+
 app.use(
   cors({
-    // origin: 'https://amruthbuildproducts.netlify.app', // Replace with your Netlify site's URL
     origin: 'https://www.amruthbuildproducts.com',
   })
 );
@@ -38,8 +37,8 @@ app.post('/contact', (req, res) => {
   const { name, email, number, message } = req.body;
   console.log(email);
   const mailOptions = {
-    from: process.env.ADMIN_EMAIL, // Use the email provided in the form
-    to: process.env.ADMIN_EMAIL, // Replace with your email
+    from: process.env.ADMIN_EMAIL,
+    to: process.env.ADMIN_EMAIL,
     subject: 'Amruth Build Products Form Submission Mail',
     html: `
     <html>

@@ -64,13 +64,6 @@ function Contact() {
       validator.isLength(number, { min: 10, max: 10 })
     );
   };
-  const isValidEmail = (email) => {
-    return validator.isEmail(email);
-  };
-
-  const isValidMessage = (message) => {
-    return validator.isLength(message, { min: 10 });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -101,7 +94,7 @@ function Contact() {
           'https://amruth-build-products-backend.onrender.com/contact',
           formData
         );
-        console.log('Form submitted successfully!', response.data);
+        // console.log('Form submitted successfully!', response.data);
       } catch (error) {
         console.error('Error submitting the form:', error);
       }
@@ -175,8 +168,6 @@ function Contact() {
                 placeholder='Enter your email'
                 onChange={handleChange}
               />
-              {/* 
-              {errors.email && <span className='error'>{errors.email}</span>}*/}
             </div>
             <div>
               <label className='mt-2 fw-bold' htmlFor='number'>
@@ -205,10 +196,6 @@ function Contact() {
                 rows='5'
                 onChange={handleChange}
               />
-              {/* 
-              {errors.message && (
-                <span className='error'>{errors.message}</span>
-              )}*/}
             </div>
             <div className='d-flex'>
               <button
@@ -227,7 +214,7 @@ function Contact() {
             </div>
             <div className='mt-4 text-success'>
               {dataSubmittedMessage && (
-                <div className='alert alert-success'>
+                <div className='alert alert-success py-1'>
                   Data Submitted successfully...!!
                 </div>
               )}
