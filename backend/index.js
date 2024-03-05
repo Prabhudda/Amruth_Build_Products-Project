@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-// const path = require('path');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const PORT = process.env.PORT || 5001;
@@ -8,12 +7,6 @@ const fs = require('fs');
 require('dotenv').config();
 
 const formSubmission = fs.readFileSync('mailFile.html', 'utf-8');
-
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// });
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -25,7 +18,6 @@ const transporter = nodemailer.createTransport({
 });
 
 app.use(express.json());
-app.use(cors());
 
 app.use(
   cors({

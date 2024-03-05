@@ -94,7 +94,7 @@ function Contact() {
           'https://amruth-build-products-backend.onrender.com/contact',
           formData
         );
-        // console.log('Form submitted successfully!', response.data);
+        console.log('Form submitted successfully!', response.data);
       } catch (error) {
         console.error('Error submitting the form:', error);
       }
