@@ -33,11 +33,11 @@
     background-color: white;
     border-radius: 5px;
 }
-.Manufacturing-img-box:hover .img-fluid{
+/* .Manufacturing-img-box:hover .img-fluid{
     transform: scale(0.9);
     cursor: pointer;
     transition: all 0.4s linear;
-}
+} */
 @media (max-width:450px) {
     .Manufacturing-main-text{
         font-size: 27px;

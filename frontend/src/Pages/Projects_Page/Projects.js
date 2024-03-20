@@ -12,7 +12,7 @@ import '../Projects_Page/Projects.css';
 const projectsData = [
   {
     id: 1,
-    title: 'Asphalt Road Project :',
+    title: 'Asphalt Road Project',
     status: 'completed',
     description1:
       'Our dedicated civil team recently achieved a significant milestone by completing a comprehensive road construction project that has transformed local infrastructure and connectivity.',
@@ -27,7 +27,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'Warehouse Construction :',
+    title: 'Warehouse Construction',
     status: 'completed',
     description1:
       'We are thrilled to announce the successful completion of Warehouse Project, a remarkable warehouse construction endeavor that underscores our unwavering commitment to excellence and innovation in the construction industry.',
@@ -76,7 +76,7 @@ const Projects = () => {
                       data-aos='fade-up'
                       data-aos-duration='1000'
                     >
-                      <h4 className='mt-sm-5 mt-3 projects-sub-text'>
+                      <h4 className='mt-sm-5 mt-3 projects-sub-text p-3 rounded'>
                         {project.title}
                       </h4>
                       <p className='mt-1'>{project.description1}</p>

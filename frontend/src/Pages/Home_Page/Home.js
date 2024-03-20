@@ -64,12 +64,36 @@ function Home() {
       <div className='home-main-container'>
         <div className='img-overlay text-center'>
           <div className='text-container container' key={id}>
-            <h1 className='company-home-title'>{title}</h1>
-            <h2 className='home-sub-title mt-3 d-md-block d-none'>{txt}</h2>
-            <h5 className='mt-3 home-sub-text d-lg-block d-none'>{tt}</h5>
+            <h1
+              className='company-home-title'
+              data-aos='zoom-in-up'
+              data-aos-duration='1500'
+            >
+              {title}
+            </h1>
+            <h2
+              className='home-sub-title mt-3 d-md-block d-none'
+              data-aos='flip-up'
+              data-aos-duration='2500'
+            >
+              {txt}
+            </h2>
+            <h5
+              className='mt-3 home-sub-text d-lg-block d-none'
+              data-aos='zoom-in-right'
+              data-aos-duration='1500'
+            >
+              {tt}
+            </h5>
           </div>
           <div className='mt-5 container'>
-            <Link className='explore-link btn btn-outline-primary' to='/about'>
+            <Link
+              className='explore-link btn btn-outline-primary'
+              to='/about'
+              data-aos='slide-up'
+              data-aos-duration='1000'
+              data-aos-delay='300'
+            >
               Explore More
             </Link>
           </div>
@@ -78,36 +102,36 @@ function Home() {
       <div className='container my-5'>
         <div className=''>
           <h3 className='text-center main-text'>
-            Building Your Vision, Brick by Brick
+            Building Your Vision, Brick By Brick
           </h3>
         </div>
       </div>
       <div
-        className='container-fluid p-0 text-center '
+        className='container-fluid p-0 text-center'
         data-aos='fade-up'
         data-aos-duration='1000'
       >
-        <div className=' row p-3 d-flex justify-content-around align-items-center'>
-          <div className='container-box col-lg-3 col-md-5 col-12 p-3 mt-md-0'>
+        <div className=' row p-3 d-flex justify-content-around align-items-center '>
+          <div className='container-box col-lg-3 col-md-5 col-12 p-5 mt-md-0'>
             <FaLightbulb className='container-icons' />
-            <h2>Innovation</h2>
+            <h3 className='mt-3'>Innovation</h3>
             <p>
               Blending technology and creativity, we exceed client expectations.
               Fresh ideas drive continuous enhancement of our offerings.
             </p>
           </div>
-          <div className='container-box col-lg-3 col-md-5 col-12 p-3 mt-lg-0 mt-md-5 mt-1'>
+          <div className='container-box col-lg-3 col-md-5 col-12 p-5 mt-lg-0 mt-md-5 mt-1'>
             <FaLeaf className='container-icons' />
-            <h2>Sustainability</h2>
+            <h3 className='mt-3 '>Sustainability</h3>
             <p>
               Our work is rooted in sustainability. We envision an eco-friendly
               future with responsible construction and efficient manufacturing
               for a greener world.
             </p>
           </div>
-          <div className='container-box col-lg-3 col-md-6 col-12 p-3 mt-lg-0 mt-md-5 mt-1'>
+          <div className='container-box col-lg-3 col-md-6 col-12 p-5 mt-lg-0 mt-md-5 mt-1'>
             <FaTrophy className='container-icons' />
-            <h2>Excellence</h2>
+            <h3 className='mt-3'>Excellence</h3>
             <p>
               Quality defines our every action, from intricate details to grand
               undertakings. Our dedication sets us apart and guarantees success.

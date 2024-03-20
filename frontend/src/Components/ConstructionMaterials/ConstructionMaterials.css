@@ -31,11 +31,11 @@
 .ConstructionMaterials-img-box{
     border-radius: 5px;
 }
-.ConstructionMaterials-img-box:hover .img-fluid{
+/* .ConstructionMaterials-img-box:hover .img-fluid{
     transform: scale(0.9);
     cursor: pointer;
     transition: all 0.4s linear;
-}
+} */
 @media (max-width:450px) {
     .ConstructionMaterials-main-text{
         font-size: 27px;

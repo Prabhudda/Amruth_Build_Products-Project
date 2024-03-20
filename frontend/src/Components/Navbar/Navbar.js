@@ -72,7 +72,7 @@ function Navbar() {
     <div className='position-relative'>
       <NavbarContainer
         className={`${
-          scroll ? 'after-scroll' : 'before-scroll'
+          scroll ? 'after-scroll ' : 'before-scroll'
         } navbar fixed-top navbar-expand-lg navbar-container `}
       >
         <NavbarHeader className='container-fluid d-flex justify-content-between align-items-center mx-md-4 px-0'>

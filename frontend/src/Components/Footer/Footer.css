@@ -19,13 +19,17 @@
 }
 .footer-link{
     color:black;
-    transition: all 0.2s;
+    display: inline-block;
+    transition: all 0.3s;
     text-decoration: none;
 }
 .footer-link:hover{
     color:blue;
     text-decoration: underline;
+    transform: translateX(5px);
 }
+
+
 .reach-us-icons{
     color: #4169e1;
     font-size: 25px !important;

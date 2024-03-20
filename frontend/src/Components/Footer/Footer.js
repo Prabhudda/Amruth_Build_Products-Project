@@ -31,7 +31,9 @@ function Footer() {
                   height={100}
                   loading='lazy'
                 />
-                <h5 className='mt-3 footer-title'>Building a Better Future</h5>
+                <h5 className='mt-3 footer-title fw-bold'>
+                  Building a Better Future
+                </h5>
                 <p>
                   we are architects of progress, builders of dreams, and
                   champions of innovation. With a steadfast commitment to
@@ -98,7 +100,7 @@ function Footer() {
               <div>
                 <Link
                   className={
-                    location.pathname === '/about' ? 'active' : 'footer-link'
+                    location.pathname === '/about' ? 'active ' : 'footer-link'
                   }
                   to='/about'
                 >
@@ -226,7 +228,7 @@ function Footer() {
                       className='footer-link'
                       to='mailto:amruthbuildproducts@gmail.com'
                       title='Drop an Email'
-                      style={{ fontSize: '13px' }}
+                      style={{ fontSize: '10px' }}
                     >
                       amruthbuildproducts@gmail.com
                     </Link>
@@ -241,9 +243,9 @@ function Footer() {
                       to='tel:+919611782840'
                       className='footer-link mt-2'
                       title='Call Us'
-                      style={{ fontSize: '15px' }}
+                      style={{ fontSize: '13px' }}
                     >
-                      9611782840
+                      +91-9611782840
                     </Link>
                   </p>
                 </div>
