@@ -6,6 +6,8 @@ import About from './Pages/About/About';
 import Products from './Pages/Product/Products';
 import Services from './Pages/Service_Page/Services';
 import Contact from './Pages/Contact/Contact';
+import ProjectDetails from './Pages/Projects_Page/ProjectDetails';
+
 // import Team from './Pages/Team/Team';
 import ScrollToTop from '../src/Components/ScrollToTop';
 import Footer from '../src/Components/Footer/Footer';
@@ -31,6 +33,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/project/:id' element={<ProjectDetails />} />
           {/*<Route path='/team' element={<Team />} /> */}
         </Routes>
         <Footer />
