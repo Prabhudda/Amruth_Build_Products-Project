@@ -12,7 +12,6 @@ const projectsData = [
   {
     id: 1,
     title: 'Asphalt Road Project',
-
     description1:
       'Our dedicated civil team recently achieved a significant milestone by completing a comprehensive road construction project that has transformed local infrastructure and connectivity.',
     description2:
