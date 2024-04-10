@@ -55,13 +55,19 @@
     z-index: 1; 
   }
   
-
+  .projectDetailsBox{
+    margin-top: 140px;
+  }
+  
 @media (max-width:450px) {
     .projects-main-text{
         font-size: 25px;
         position: relative;
         color: #0b0757;
     }
+    .projectDetailsBox{
+        margin-top: 90px;
+      }
     .projects-main-text::before{
         content: '';
         width: 160px;

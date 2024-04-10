@@ -12,10 +12,10 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className='container' style={{ marginTop: '120px' }} key={project.id}>
-      <div className='my-5 row p-sm-0 p-3 d-flex justify-content-center align-items-center'>
+    <div className='container projectDetailsBox' key={project.id}>
+      <div className='my-sm-5 my-3 row p-sm-0 p-3 d-flex justify-content-center align-items-center'>
         <h4 className='fw-bold text-center'>{project.title}</h4>
-        <span className='fw-bold'>
+        <span className='mt-3 d-md-flex d-none fw-bold'>
           <Link to='/projects' className='text-decoration-none'>
             projects
           </Link>
