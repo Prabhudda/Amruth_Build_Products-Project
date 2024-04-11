@@ -15,21 +15,21 @@ const Projects = () => {
       <div className='my-5 '>
         <div className=''>
           <div className='container mt-5 '>
-            <h2
-              className='projects-main-text'
+            <h4
+              className='projects-main-text mx-5'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
               Completed Projects
-            </h2>
-            <div className='row mt-5'>
+            </h4>
+            <div className='row mt-5 d-flex justify-content-start align-items-center'>
               {ProjectData.map((project) => (
                 <div
-                  className='col-md-4 col-sm-6 position-relative'
+                  className='col-lg-4 col-12 position-relative'
                   key={project.id}
                 >
                   <div
-                    className='card position-relative'
+                    className=' position-relative mt-md-5 mt-4 mx-3'
                     data-aos='fade-up'
                     data-aos-duration='1000'
                   >
@@ -43,7 +43,7 @@ const Projects = () => {
                     <div className='card-overlay'></div>
                     <Link
                       to={`/project/${project.id}`}
-                      className='btn btn-outline-primary text-white text-decoration-none projects-sub-text text-center position-absolute'
+                      className='p-lg-1 p-md-4 p-2 btn btn-outline-primary text-white text-decoration-none projects-sub-text text-center position-absolute'
                     >
                       {project.title}
                     </Link>

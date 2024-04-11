@@ -4,6 +4,9 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 const PORT = process.env.PORT || 5001;
 const fs = require('fs');
+const mongoose = require('mongoose');
+// const multer = require('multer');
+
 require('dotenv').config();
 
 const formSubmission = fs.readFileSync('mailFile.html', 'utf-8');
@@ -24,6 +27,61 @@ app.use(
   })
 );
 
+// Connect to MongoDB Atlas
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+});
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', () => {
+  console.log('Connected to MongoDB Atlas');
+});
+
+// // Define a schema for your project data
+// const projectSchema = new mongoose.Schema({
+//   title: String,
+//   description: String,
+//   startDate: Date,
+//   endDate: Date,
+//   images: [String], // Assuming you store image URLs in MongoDB
+// });
+
+// const Project = mongoose.model('Project', projectSchema);
+
+// // Configure multer for file uploads
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, 'uploads/');
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, file.originalname);
+//   },
+// });
+
+// const upload = multer({ storage: storage });
+
+// // Handle form submissions for projects
+// app.post('/api/admin/projects', upload.array('images'), async (req, res) => {
+//   try {
+//     const { title, description, startDate, endDate } = req.body;
+//     const images = req.files.map((file) => file.path);
+//     const project = new Project({
+//       title,
+//       description,
+//       startDate,
+//       endDate,
+//       images,
+//     });
+//     await project.save();
+//     res.status(201).json(project);
+//   } catch (error) {
+//     console.error('Error adding project:', error);
+//     res.status(500).json({ error: 'Internal Server Error' });
+//   }
+// });
+
+// Handle contact form submissions
 app.post('/contact', (req, res) => {
   const { name, email, number, message } = req.body;
   console.log(email);

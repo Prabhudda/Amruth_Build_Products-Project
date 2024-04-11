@@ -42,8 +42,8 @@ function About() {
         </div>
       </div>
       <div className='container mt-5'>
-        <div className='row d-flex justify-content-around align-items-center'>
-          <div className='col-lg-6 col-11'>
+        <div className='row d-flex justify-content-center align-items-center'>
+          <div className='col-lg-4 col-11'>
             <img
               loading='lazy'
               className='img-fluid company-img-box'
@@ -51,7 +51,7 @@ function About() {
               alt='company-img'
             />
           </div>
-          <div className='col-lg-6 col-11 mt-lg-0 mt-4'>
+          <div className='col-lg-4 col-11 mt-lg-0 mt-4'>
             <img
               loading='lazy'
               className='img-fluid company-img-box'
@@ -63,7 +63,7 @@ function About() {
       </div>
       <div className='container mt-4'>
         <div className='row d-flex justify-content-around align-items-center'>
-          <div className='col-lg-6 col-11'>
+          <div className='col-lg-4 col-11'>
             <img
               loading='lazy'
               className='img-fluid company-img-box'

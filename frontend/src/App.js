@@ -15,6 +15,7 @@ import Whatsapp from './Components/Whatsapp/Whatsapp';
 import Projects from './Pages/Projects_Page/Projects';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Admin from './adminPage/Admin';
 
 AOS.init(); // Initialize AOS
 const MainContainer = styled.section``;
@@ -34,6 +35,8 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/project/:id' element={<ProjectDetails />} />
+          <Route path='/admin' element={<Admin />} />
+
           {/*<Route path='/team' element={<Team />} /> */}
         </Routes>
         <Footer />
