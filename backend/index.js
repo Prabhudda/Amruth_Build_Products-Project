@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
 app.use(express.json());
 app.use(
   cors({
-    origin: 'https://www.amruthbuildproducts.com',
+    origin: 'http://localhost:3000',
   })
 );
 
