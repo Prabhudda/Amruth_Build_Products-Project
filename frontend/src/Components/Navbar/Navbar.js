@@ -64,7 +64,7 @@ function Navbar() {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      window.scrollY > 300 ? setScroll(true) : setScroll(false);
+      window.scrollY > 200 ? setScroll(true) : setScroll(false);
     });
   }, []);
 
@@ -86,12 +86,23 @@ function Navbar() {
                 <img
                   src={Logo}
                   className='mx-sm-2 mx-1 logo'
+                  style={{
+                    width: `${scroll ? '60px' : '70px'}`,
+                    height: `${scroll ? '60px' : '70px'}`,
+                    transition: 'width 0.5s ease, height 0.5s ease',
+                  }}
                   alt='logo'
                   loading='lazy'
                 />
               </Link>
             </div>
-            <span className='company-text px-sm-2 px-0'>
+            <span
+              className='company-text px-sm-2 px-0'
+              style={{
+                fontSize: `${scroll ? '16px' : '20px'}`,
+                transition: 'width 0.5s ease, height 0.5s ease',
+              }}
+            >
               Amruth Build Products
             </span>
           </div>
