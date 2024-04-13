@@ -18,17 +18,17 @@ import ConstructionMaterials from '..//..//Components/ConstructionMaterials/Cons
 const data = [
   {
     id: 1,
-    title: 'Amruth Build Products',
-    txt: 'Build a Better Future',
+    title: 'Innovative Construction & Manufacturing',
+    txt: 'Blueprinting Your Dreams , Where Imagination Meets Architecture',
     img: `${img1}`,
-    tt: 'Innovative Construction & Manufacturing Company',
+    tt: '',
   },
   {
     id: 2,
     title: 'Amruth Build Products',
     txt: 'Build a Better Future',
     img: `${img1}`,
-    tt: 'Innovative Construction & Manufacturing Company',
+    tt: 'Innovative Construction & Manufacturing',
   },
   {
     id: 3,
@@ -65,12 +65,24 @@ function Home() {
         <div className='img-overlay text-center'>
           <div className='text-container container' key={id}>
             <h1 className='company-home-title'>{title}</h1>
-            <h2 className='home-sub-title mt-3 d-md-block d-none'>{txt}</h2>
-            <h5 className='mt-3 home-sub-text d-lg-block d-none'>{tt}</h5>
+            <p className='mt-3 home-sub-text'>{txt}</p>
           </div>
-          <div className='mt-5 container'>
-            <Link className='explore-link btn btn-outline-primary' to='/about'>
+          <div className='mt-4 container home-button'>
+            <Link className='explore-link' to='/about'>
               Explore More
+            </Link>
+            <Link
+              className='btn btn-outline-primary mx-3 text-light'
+              to='/contact'
+              style={{
+                letterSpacing: '1px',
+                borderRadius: '0px',
+                padding: '5px 12px',
+                fontSize: '1rem',
+                marginTop: '-3px',
+              }}
+            >
+              Reach Us
             </Link>
           </div>
         </div>
