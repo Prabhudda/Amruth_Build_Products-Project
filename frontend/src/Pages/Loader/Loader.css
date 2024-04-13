@@ -1,68 +1,64 @@
+ 
 .loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .loader {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #007bff;
-    position: relative;
-    animation: rotate 2s infinite linear;
-  }
-  
-  .loader-arm {
-    width: 60px;
-    height: 10px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: arm-move 2s infinite alternate ease-in-out;
-  }
-  
-  .loader-bucket {
-    width: 25px;
-    height: 25px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    animation: bucket-move 2s infinite alternate ease-in-out;
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes arm-move {
-    0% {
-      width: 60px;
-      transform: translate(-50%, -50%);
-    }
-    100% {
-      width: 80px;
-      transform: translate(-50%, -50%) rotate(20deg);
-    }
-  }
-  
-  @keyframes bucket-move {
-    0%, 100% {
-      left: 100%;
-    }
-    50% {
-      left: 0%;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+}
+
+.block {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.A {
+  left: 0;
+  animation:  jumpA 1s infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.B {
+  left: 40px; 
+  animation:jumpB 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+.P {
+  left: 80px;
+  animation: jumpP 1s infinite alternate;
+  animation-delay: 2s;
+}
+
+
+@keyframes jumpA {
+  0% { top: 0; }
+  50% { top: -20px; }
+  100% { top: 0; }
+}
+
+@keyframes jumpB {
+  0% { top: 0; }
+  50% { top: -20px; }
+  100% { top: 0; }
+}
+
+@keyframes jumpP {
+  0% { top: 0; }
+  50% { top: -20px; }
+  100% { top: 0; }
+}
+
+

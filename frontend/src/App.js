@@ -16,30 +16,48 @@ import Projects from './Pages/Projects_Page/Projects';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Admin from './adminPage/Admin';
+import Loader from '../src/Pages/Loader/Loader';
+import { useEffect, useState } from 'react';
 
 AOS.init(); // Initialize AOS
 const MainContainer = styled.section``;
 
 function App() {
+  const [load, setLoad] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoad(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <MainContainer className=''>
       <Router>
-        <Navbar />
-        <Whatsapp />
-        <ScrollToTop />
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/project/:id' element={<ProjectDetails />} />
-          <Route path='/admin' element={<Admin />} />
+        {load ? (
+          <Loader />
+        ) : (
+          <div>
+            <Navbar />
+            <Whatsapp />
+            <ScrollToTop />
+            <Routes>
+              <Route path='/' exact element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/products' element={<Products />} />
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/services' element={<Services />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/project/:id' element={<ProjectDetails />} />
+              <Route path='/admin' element={<Admin />} />
 
-          {/*<Route path='/team' element={<Team />} /> */}
-        </Routes>
-        <Footer />
+              {/*<Route path='/team' element={<Team />} /> */}
+            </Routes>
+            <Footer />
+          </div>
+        )}
       </Router>
     </MainContainer>
   );

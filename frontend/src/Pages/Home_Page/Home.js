@@ -55,7 +55,7 @@ const data = [
 
 function Home() {
   const [index] = useState(0);
-  const { id, title, txt, tt } = data[index];
+  const { id, title, txt } = data[index];
   return (
     <div
       className='home-head-component position-relative container-fluid px-0  my-4'

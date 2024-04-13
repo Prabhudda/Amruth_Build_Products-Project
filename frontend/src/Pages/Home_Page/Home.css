@@ -95,7 +95,7 @@
         border: 1px solid #014AA8;
         letter-spacing: 1px;
         background-color: #007bff;
-        margin-right: 5px; /* Adjust margin to match Bootstrap button */
+        margin-right: 5px; 
     }
     
     .explore-link:hover {
