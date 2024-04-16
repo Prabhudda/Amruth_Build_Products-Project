@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home_Page/Home';
 import About from './Pages/About/About';
@@ -19,11 +24,12 @@ import Admin from './adminPage/Admin';
 import Loader from '../src/Pages/Loader/Loader';
 import { useEffect, useState } from 'react';
 
-AOS.init(); // Initialize AOS
+AOS.init();
 const MainContainer = styled.section``;
 
 function App() {
   const [load, setLoad] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,6 +38,8 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const shouldDisplayFooter = location.pathname !== '/project/:id';
 
   return (
     <MainContainer className=''>
@@ -55,7 +63,7 @@ function App() {
 
               {/*<Route path='/team' element={<Team />} /> */}
             </Routes>
-            <Footer />
+            {shouldDisplayFooter && <Footer />}
           </div>
         )}
       </Router>
