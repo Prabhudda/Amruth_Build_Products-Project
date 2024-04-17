@@ -39,8 +39,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  const shouldDisplayFooter = location.pathname !== '/project/:id';
-
   return (
     <MainContainer className=''>
       <Router>
@@ -63,7 +61,7 @@ function App() {
 
               {/*<Route path='/team' element={<Team />} /> */}
             </Routes>
-            {shouldDisplayFooter && <Footer />}
+            <Footer />
           </div>
         )}
       </Router>
