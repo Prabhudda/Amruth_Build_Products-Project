@@ -17,6 +17,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Admin from './adminPage/Admin';
 import Loader from '../src/Pages/Loader/Loader';
+import ErrorPage from './Pages/Error_Page/ErrorPage';
 import { useEffect, useState } from 'react';
 
 AOS.init();
@@ -52,7 +53,7 @@ function App() {
               <Route path='/contact' element={<Contact />} />
               <Route path='/project/:id' element={<ProjectDetails />} />
               <Route path='/admin' element={<Admin />} />
-
+              <Route path='*' element={<ErrorPage />} />
               {/*<Route path='/team' element={<Team />} /> */}
             </Routes>
             <Footer />
