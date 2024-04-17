@@ -1,10 +1,5 @@
 import styled from 'styled-components';
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home_Page/Home';
 import About from './Pages/About/About';
@@ -29,7 +24,6 @@ const MainContainer = styled.section``;
 
 function App() {
   const [load, setLoad] = useState(true);
-  const location = useLocation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
