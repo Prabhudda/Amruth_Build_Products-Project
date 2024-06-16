@@ -7,8 +7,6 @@ import Products from './Pages/Product/Products';
 import Services from './Pages/Service_Page/Services';
 import Contact from './Pages/Contact/Contact';
 import ProjectDetails from './Pages/Projects_Page/ProjectDetails';
-
-// import Team from './Pages/Team/Team';
 import ScrollToTop from '../src/Components/ScrollToTop';
 import Footer from '../src/Components/Footer/Footer';
 import Whatsapp from './Components/Whatsapp/Whatsapp';
@@ -16,30 +14,15 @@ import Projects from './Pages/Projects_Page/Projects';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Admin from './adminPage/Admin';
-import Loader from '../src/Pages/Loader/Loader';
 import ErrorPage from './Pages/Error_Page/ErrorPage';
-import { useEffect, useState } from 'react';
 
 AOS.init();
 const MainContainer = styled.section``;
 
 function App() {
-  const [load, setLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoad(false);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <MainContainer className=''>
       <Router>
-        {load ? (
-          <Loader />
-        ) : (
           <div>
             <Navbar />
             <Whatsapp />
@@ -54,11 +37,9 @@ function App() {
               <Route path='/project/:id' element={<ProjectDetails />} />
               <Route path='/admin' element={<Admin />} />
               <Route path='*' element={<ErrorPage />} />
-              {/*<Route path='/team' element={<Team />} /> */}
             </Routes>
             <Footer />
           </div>
-        )}
       </Router>
     </MainContainer>
   );
