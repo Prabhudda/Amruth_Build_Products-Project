@@ -73,7 +73,6 @@ function About() {
           </div>
         </div>
       </div>
-
       <div className='position-relative our-values-container container p-0 text-center'>
         <h3 className='about-main-text text-center px-1'>Framing Our Values</h3>
         <div className='row p-3 d-md-flex flex-md-row flex-row-reverse justify-content-around align-items-center mt-5'>
@@ -121,14 +120,14 @@ function About() {
         </div>
       </div>
       <div className='container position-relative my-5'>
-        <div className='row d-flex justify-content-between align-items-center'>
+        <div className='row d-flex justify-content-between align-items-flex-start'>
           <div
             className='col-lg-5 col-12'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
             <h3 className='about-main-text'>Who We Are</h3>
-            <p className='mt-5 px-sm-0 px-3 paragraphs'>
+            <p className='mt-4 px-sm-0 px-3 paragraphs'>
               Beyond a company, a passion, a vision, a commitment. With over 2
               years of expertise, we've refined our craft into an art. Our
               skilled team turns your concepts into enduring realities through
@@ -141,7 +140,7 @@ function About() {
             data-aos-duration='1000'
           >
             <h3 className='about-main-text'>What Sets Us Apart</h3>
-            <p className='mt-5 px-sm-0 px-3  paragraphs'>
+            <p className='mt-4 px-sm-0 px-3  paragraphs'>
               Uniqueness drives us.Quality and customer happiness are our
               foundations.Trust in our promise for exceptional results and a
               greener future.

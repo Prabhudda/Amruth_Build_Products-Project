@@ -35,7 +35,7 @@ const data = [
     title: 'Services',
     txt: 'Planning & Designing',
     img: `${img2}`,
-    tt: 'Blueprinting Your Dreams , Where Imagination Meets Architecture',
+    tt: 'Blueprinting Your Dreams,Where Imagination Meets Architecture',
   },
   {
     id: 4,
@@ -68,15 +68,15 @@ function Home() {
             <p className='mt-3 home-sub-text'>{txt}</p>
           </div>
           <div className='mt-4 container home-button'>
-            <Link className='explore-link' to='/about'>
-              Explore More
+            <Link className='explore-link  px-md-4' to='/about'>
+              Explore
             </Link>
             <Link
-              className='btn btn-outline-primary mx-3 text-light'
+              className='btn btn-outline-primary mx-2 px-md-4 text-light'
               to='/contact'
               style={{
                 letterSpacing: '1px',
-                borderRadius: '0px',
+                borderRadius: '5px',
                 padding: '5px 12px',
                 fontSize: '1rem',
                 marginTop: '-3px',

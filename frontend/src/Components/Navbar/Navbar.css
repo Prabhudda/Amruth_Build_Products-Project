@@ -1,75 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@900&family=Poppins:wght@200;300&display=swap');
 
-.after-scroll{
-    background: transparent linear-gradient(143deg,#e2f8ff,#e2f8ff) 0 0 no-repeat padding-box;
-    
+.after-scroll {
+    background: transparent linear-gradient(143deg, #e2f8ff, #e2f8ff) 0 0 no-repeat padding-box;
+
 }
-.before-scroll{
-    background-color:white;
+
+.before-scroll {
+    background-color: white;
 }
 
 .app.light {
     background-color: #f8f8f8 !important;
     color: #333 !important;
-  }
-  
-  .app.dark {
+}
+
+.app.dark {
     background-color: #333 !important;
     color: #f8f8f8 !important;
-  }
-
-.navbar-container{
-    box-shadow: 0px 15px 31px -3px rgba(0,0,0,0.1);
-    overflow-x:hidden !important;
 }
-.logo{
 
+.navbar-container {
+    box-shadow: 0px 15px 31px -3px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden !important;
+}
+
+.logo {
     border-radius: 50%;
 }
 
-.company-text{
+.company-text {
     color: #0b0757;
     text-decoration: none;
     font-weight: bold;
     opacity: 100%;
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
-    /* font-family: 'Times New Roman', Times, serif; */
 }
 
-.contact-btn:hover{
-    background-color:#fff;
+.contact-btn:hover {
+    background-color: #fff;
     color: #014AA8;
 }
-.navbar-links{
+
+.navbar-links {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 15px;
     opacity: 70%;
 }
-.active{
+
+.active {
     color: #004bab;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    cursor:auto;
+    cursor: auto;
 }
-.navbar-links:hover{
+
+.navbar-links:hover {
     color: #004bab;
     opacity: 100%;
     opacity: 100%;
 }
 
-@media (max-width:992px){
-    .LogoRound{
+@media (max-width:992px) {
+    .LogoRound {
         width: 100px;
         height: 100px;
         border-radius: 50%;
     }
-    .navbar-left{
+
+    .navbar-left {
         justify-content: space-between !important;
     }
-    .li{
+
+    .li {
         line-height: 70px;
         font-weight: bold;
         opacity: 1 !important;
@@ -77,20 +80,21 @@
 }
 
 @media (max-width:450px) {
-    .company-text{
+    .company-text {
         color: #0b0757;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 16px !important;
         font-weight: 600;
         opacity: 100%;
     }
-    .logo{
-        width: 60px;
-        height: 60px;
+
+    .logo {
+        width: 60px !important;
+        height: 60px !important;
         border-radius: 50%;
     }
-    
-    .li{
+
+    .li {
         line-height: 70px;
         font-weight: bold;
         opacity: 1 !important;
@@ -98,27 +102,29 @@
 }
 
 
-@media (max-width:325px){
-    .company-text{
+@media (max-width:325px) {
+    .company-text {
         color: #0b0757;
-        font-size: 14px;
+        font-size: 14px !important;
     }
-    .logo{
-        width: 55px;
-        height: 55px;
+
+    .logo {
+        width: 55px !important;
+        height: 55px !important;
         border-radius: 50%;
     }
 }
 
 
-@media (max-width:299px){
-    .company-text{
+@media (max-width:299px) {
+    .company-text {
         color: #0b0757;
-        font-size: 12px;
+        font-size: 12px !important;
     }
-    .logo{
-        width: 50px;
-        height: 50px;
+
+    .logo {
+        width: 45px !important;
+        height: 45px !important;
         border-radius: 50%;
     }
 }
